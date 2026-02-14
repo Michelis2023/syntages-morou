@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Συνταγές βρεφικής τροφής για τον Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01): οδηγίες, χρόνοι ατμού, υφές ανά ηλικία, συμβουλές ασφάλειας.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --primary: #2b7a78;
+      --primary-light: #def2f1;
+      --accent: #ffb347;
+      --text: #222222;
+      --muted: #666666;
+      --border: #e0e0e0;
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.06);
+      --nav-bg: rgba(250,250,250,0.94);
+      --nav-border: #e5e5e5;
+      --toggle-bg: #e0e0e0;
+      --toggle-knob: #ffffff;
+      --link: #2b7a78;
+      --link-hover: #205a59;
+      --max-width: 1040px;
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color-scheme: light dark;
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --card-bg: #020617;
+      --primary: #38bdf8;
+      --primary-light: rgba(56,189,248,0.1);
+      --accent: #fbbf24;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2933;
+      --shadow: 0 18px 45px rgba(0,0,0,0.7);
+      --nav-bg: rgba(15,23,42,0.96);
+      --nav-border: #1f2933;
+      --toggle-bg: #020617;
+      --toggle-knob: #fbbf24;
+      --link: #38bdf8;
+      --link-hover: #7dd3fc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: radial-gradient(circle at top, #ffffff 0, var(--bg) 48%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 4.25rem 1rem 2.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .page {
+        padding: 5rem 1.75rem 3.5rem;
+      }
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--nav-border);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.45rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .nav-inner {
+        padding: 0.55rem 1.75rem;
+      }
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.86rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.02rem;
+      min-width: 0;
+    }
+
+    .brand-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      color: var(--text);
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-link {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.25rem 0.55rem;
+      border-radius: 999px;
+      transition: background-color 0.15s ease, color 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible {
+      background-color: var(--primary-light);
+      color: var(--primary);
+      outline: none;
+    }
+
+    .nav-link.primary-link {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* mobile nav */
+
+    .nav-links-desktop {
+      display: none;
+    }
+
+    .nav-toggle {
+      border: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 999px;
+      position: relative;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 999px;
+      transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+    }
+
+    .nav-toggle span::before {
+      top: -6px;
+    }
+
+    .nav-toggle span::after {
+      bottom: -6px;
+    }
+
+    .nav-toggle.open span {
+      background-color: transparent;
+    }
+
+    .nav-toggle.open span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .nav-toggle.open span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    .nav-menu-mobile {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      border-top: 1px solid transparent;
+    }
+
+    .nav-menu-mobile.open {
+      border-top-color: var(--nav-border);
+      max-height: 220px;
+    }
+
+    .nav-menu-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.4rem 1rem 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .nav-toggle {
+        display: none;
+      }
+      .nav-menu-mobile {
+        display: none;
+      }
+      .nav-links-desktop {
+        display: flex;
+      }
+    }
+
+    /* DARK MODE TOGGLE */
+
+    .controls-row {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .theme-toggle {
+      position: relative;
+      width: 46px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--toggle-bg);
+      display: inline-flex;
+      align-items: center;
+      padding: 3px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.07);
+    }
+
+    .theme-toggle-knob {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: var(--toggle-knob);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      transition: transform 0.18s ease, background-color 0.18s ease;
+      transform: translateX(0);
+    }
+
+    body.dark .theme-toggle-knob {
+      transform: translateX(20px);
+    }
+
+    .theme-toggle-icon {
+      line-height: 1;
+    }
+
+    .theme-toggle-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* PAGE CONTENT */
+
+    header.main-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: var(--primary-light);
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.35rem;
+    }
+
+    .page-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem;
+      color: var(--primary);
+    }
+
+    @media (min-width: 768px) {
+      .page-title {
+        font-size: 1.9rem;
+      }
+    }
+
+    .page-subtitle {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .intro-card, .section-card, .table-card, .tips-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.15rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(15,23,42,0.02);
+    }
+
+    @media (min-width: 768px) {
+      .intro-card, .section-card, .table-card, .tips-card {
+        padding: 1.5rem 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 0 0 0.75rem;
+      color: var(--primary);
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 1rem 0 0.5rem;
+      color: var(--text);
+    }
+
+    h4 {
+      font-size: 0.95rem;
+      margin: 0.75rem 0 0.35rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    ul, ol {
+      margin: 0.25rem 0 0.6rem 1.25rem;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.35rem;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: #fff0;
+      white-space: nowrap;
+    }
+
+    .age-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      background: #f3f9ff20;
+      color: #24527a;
+      margin-bottom: 0.4rem;
+      border: 1px solid var(--primary-light);
+    }
+
+    body.dark .age-chip {
+      color: #e5e7eb;
+      background: rgba(15,23,42,0.7);
+    }
+
+    .age-chip span {
+      font-size: 0.85rem;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .recipe-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .recipe-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 0.9rem 0.9rem 0.95rem;
+      background: linear-gradient(145deg, #ffffff05, #00000008);
+    }
+
+    body.dark .recipe-card {
+      background: radial-gradient(circle at top left, #1f2937 0, #020617 48%, #020617 100%);
+    }
+
+    .recipe-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+      margin-bottom: 0.35rem;
+    }
+
+    .meta-pill {
+      font-size: 0.7rem;
+      padding: 0.05rem 0.45rem;
+      border-radius: 999px;
+      background: #f5f5f5;
+      color: var(--muted);
+    }
+
+    body.dark .meta-pill {
+      background: rgba(15,23,42,0.9);
+      color: var(--muted);
+    }
+
+    .nutrition-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 0.35rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      min-width: 280px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f7fb;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    body.dark th {
+      background: rgba(15,23,42,0.9);
+    }
+
+    caption {
+      text-align: left;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .tip-list {
+      margin: 0.35rem 0 0.2rem 1.2rem;
+      padding: 0;
+      font-size: 0.92rem;
+    }
+
+    .tip-list li {
+      margin-bottom: 0.15rem;
+    }
+
+    .section-heading {
+      margin: 1.1rem 0 0.55rem;
+      font-size: 1.02rem;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 1.8rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--link-hover);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-mark">A4</div>
+        <div class="brand-text">
+          <div class="brand-title">Avent 4‑in‑1 Συνταγές</div>
+          <div class="brand-sub">Βρεφική τροφή • SCF883/01</div>
+        </div>
+      </div>
+
+      <div class="nav-links nav-links-desktop">
+        <a class="nav-link primary-link" href="#top">Αρχή</a>
+        <a class="nav-link" href="#age-6m">6+ μηνών</a>
+        <a class="nav-link" href="#age-7-9m">7–9 μηνών</a>
+        <a class="nav-link" href="#age-10-12m">10–12 μηνών</a>
+        <a class="nav-link" href="#snacks">Σνακ</a>
+        <a class="nav-link" href="#storage-safety">Αποθήκευση</a>
+        <div class="controls-row">
+          <div class="theme-toggle" id="themeToggle" aria-label="Εναλλαγή θέματος" role="button">
+            <div class="theme-toggle-knob">
+              <span class="theme-toggle-icon">☀️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <button class="nav-toggle" id="navToggle" aria-label="Εναλλαγή μενού">
+          <span></span>
+        </button>
+        <div class="theme-toggle" id="themeToggleMobile" aria-label="Εναλλαγή θέματος" role="button">
+          <div class="theme-toggle-knob">
+            <span class="theme-toggle-icon">☀️</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-menu-mobile" id="navMenuMobile">
+      <div class="nav-menu-inner">
+        <a class="nav-link primary-link" href="#top">Αρχή</a>
+        <a class="nav-link" href="#age-6m">6+ μηνών</a>
+        <a class="nav-link" href="#age-7-9m">7–9 μηνών</a>
+        <a class="nav-link" href="#age-10-12m">10–12 μηνών</a>
+        <a class="nav-link" href="#snacks">Σνακ</a>
+        <a class="nav-link" href="#storage-safety">Αποθήκευση</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page" id="top">
+    <header class="main-header">
+      <p class="badge">Philips Avent SCF883/01</p>
+      <h1 class="page-title">Συνταγές Βρεφικής Τροφής για Philips Avent Premium 4‑in‑1 Steamer Blender</h1>
+      <p class="page-subtitle">
+        Ιδέες για πολτούς, γεύματα με κρέας/ψάρι, σνακ και οδηγίες υφής–χρόνου για κάθε ηλικία, με προσαρμογή σε κινητά και όλες τις συσκευές. [web:2][web:22]
+      </p>
+    </header>
+
+    <section class="intro-card">
+      <h2>Εισαγωγή</h2>
+      <p>
+        Το Philips Avent Premium 4‑in‑1 Steamer Blender (SCF883/01) συνδυάζει ατμομαγείρεμα, μπλένταρισμα, απόψυξη και θέρμανση σε μία κανάτα 1&nbsp;λίτρου, με τεχνολογία ατμού που βοηθά στη διατήρηση θρεπτικών συστατικών και υφής. [web:2]
+      </p>
+      <p>
+        Οι συνταγές είναι οργανωμένες ανά ηλικία (6+, 7‑9, 10‑12 μηνών) και βασίζονται σε κατευθύνσεις της Philips Avent για ασφαλή εισαγωγή στερεών τροφών. Πριν δοκιμάσετε κάτι νέο, βεβαιωθείτε ότι συμφωνεί ο παιδίατρός σας. [web:22]
+      </p>
+      <h4>Βασικές οδηγίες χρήσης</h4>
+      <ul class="tip-list">
+        <li>Κόψτε τα υλικά σε κύβους περίπου 1&nbsp;cm για ομοιόμορφο μαγείρεμα. [web:22]</li>
+        <li>Γεμίστε τη δεξαμενή νερού μέχρι το σημάδι και ρυθμίστε τον χρόνο ατμού ανάλογα με το τρόφιμο. [web:26]</li>
+        <li>Όταν ακουστεί το μπιπ, αναποδογυρίστε την κανάτα και μπλεντάρετε σε παλμούς 15&nbsp;δευτ. μέχρι την επιθυμητή υφή. [web:26]</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">Απογαλάκτιση</span>
+        <span class="tag">Βρεφική τροφή</span>
+        <span class="tag">Ατμομάγειρας &amp; μπλέντερ</span>
+        <span class="tag">Philips Avent</span>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <h2>Χρόνοι ατμού &amp; υφή ανά ηλικία</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Ενδεικτικοί χρόνοι ατμού</caption>
+          <thead>
+            <tr>
+              <th>Τροφή</th>
+              <th>Χρόνος ατμού (λεπτά)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Μήλο, αχλάδι</td><td>10–15</td></tr>
+            <tr><td>Μπανάνα, βερίκοκο</td><td>8–10</td></tr>
+            <tr><td>Πατάτα, καρότο</td><td>20–25</td></tr>
+            <tr><td>Γλυκοπατάτα, κολοκύθα</td><td>20–25</td></tr>
+            <tr><td>Μπρόκολο, κολοκυθάκι</td><td>15–20</td></tr>
+            <tr><td>Αρακάς, φασολάκια</td><td>15–20</td></tr>
+            <tr><td>Κοτόπουλο</td><td>20–25</td></tr>
+            <tr><td>Μοσχάρι</td><td>25–30</td></tr>
+            <tr><td>Ψάρι (λευκό)</td><td>15–20</td></tr>
+            <tr><td>Σολομός</td><td>20–25</td></tr>
+            <tr><td>Ρύζι με λαχανικά</td><td>20–25</td></tr>
+            <tr><td>Φακές</td><td>25–30</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrapper" style="margin-top:0.8rem;">
+        <table>
+          <caption>Προτεινόμενη υφή ανά ηλικία</caption>
+          <thead>
+            <tr>
+              <th>Ηλικία</th>
+              <th>Υφή</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>6 μηνών</td><td>Λείος, αρκετά αραιός πολτός.</td></tr>
+            <tr><td>7–8 μηνών</td><td>Χοντρός πολτός με πολύ μικρά κομματάκια.</td></tr>
+            <tr><td>9–10 μηνών</td><td>Χοντροκομμένο με ορατά κομμάτια.</td></tr>
+            <tr><td>11–12 μηνών</td><td>Τεμαχισμένο με πιρούνι, μαλακά κομμάτια.</td></tr>
+            <tr><td>12+ μηνών</td><td>Πλησιάζει την οικογενειακή τροφή.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 6+ months -->
+    <section class="section-card" id="age-6m">
+      <div class="age-chip"><span>6+ μηνών</span></div>
+      <h2>Συνταγές για βρέφη 6+ μηνών</h2>
+      <p>
+        Στην αρχή προτιμάμε απλούς συνδυασμούς φρούτων ή λαχανικών, με λείο πολτό και σταδιακή αύξηση της πυκνότητας όσο το μωρό εξοικειώνεται. [web:22]
+      </p>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3 class="recipe-title">Πολτός μήλου &amp; αχλαδιού</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">10–15′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 μήλο, καθαρισμένο σε κύβους 1&nbsp;cm.</li>
+            <li>1 αχλάδι, καθαρισμένο σε κύβους 1&nbsp;cm.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε τα φρούτα στην κανάτα.</li>
+            <li>Γεμίστε τη δεξαμενή με νερό και ρυθμίστε 10–15′ ατμό.</li>
+            <li>Αναποδογυρίστε την κανάτα και μπλεντάρετε σε παλμούς 3–5 × 15&nbsp;δευτ.</li>
+            <li>Αραιώστε με νερό ή γάλα αν χρειάζεται.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε φυτικές ίνες και βιταμίνη C. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Πολτός πατάτας &amp; μπρόκολου</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">15–20′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 μεσαία πατάτα, σε κύβους.</li>
+            <li>1 μικρό μπρόκολο, σε ανθάκια.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε πατάτα και μπρόκολο στην κανάτα.</li>
+            <li>Ατμός για 15–20′ μέχρι να μαλακώσουν.</li>
+            <li>Μπλεντάρετε προσθέτοντας νερό ή γάλα για λείο πολτό.</li>
+          </ol>
+          <p class="nutrition-note">Πηγή υδατανθράκων, βιταμίνης K και φυλλικού οξέος. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Πολτός καρότου &amp; αρακά</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">20′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>2 καρότα, σε κύβους.</li>
+            <li>100&nbsp;g αρακάς, φρέσκος ή κατεψυγμένος.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε τα λαχανικά στην κανάτα.</li>
+            <li>Ατμός για περίπου 20′.</li>
+            <li>Μπλεντάρετε μέχρι να γίνει λείος πολτός, προσθέτοντας νερό αν χρειαστεί.</li>
+          </ol>
+          <p class="nutrition-note">Εξαιρετική πηγή βήτα‑καροτίνης και πρωτεΐνης. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Πολτός μπανάνας &amp; βερίκοκου</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">≈10′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 μπανάνα, σε φέτες.</li>
+            <li>3 βερίκοκα, χωρίς κουκούτσι, σε κύβους.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε τα φρούτα στην κανάτα.</li>
+            <li>Ατμός για περίπου 10′ (κυρίως για τα βερίκοκα).</li>
+            <li>Μπλεντάρετε μέχρι να γίνει κρέμα.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε κάλιο και βιταμίνη A. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Πολτός κολοκύθας &amp; γλυκοπατάτας</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">20–25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>≈150&nbsp;g κολοκύθα, σε κύβους.</li>
+            <li>1 μικρή γλυκοπατάτα, σε κύβους.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε κολοκύθα και γλυκοπατάτα στην κανάτα.</li>
+            <li>Ατμός για 20–25′ μέχρι να μαλακώσουν.</li>
+            <li>Μπλεντάρετε με λίγο νερό ή γάλα.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε φυτικές ίνες και βιταμίνες A &amp; C. [web:22]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7–9 months -->
+    <section class="section-card" id="age-7-9m">
+      <div class="age-chip"><span>7–9 μηνών</span></div>
+      <h2>Συνταγές για βρέφη 7–9 μηνών</h2>
+      <p>
+        Προσθέτουμε σταδιακά ρύζι, όσπρια, κρέας και ψάρι, με πιο «κοκκώδη» πολτό και μικρά κομματάκια ώστε να ασκείται η μάσηση. [web:22]
+      </p>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3 class="recipe-title">Μελιτζάνα με ρύζι &amp; σταφίδες</h3>
+          <div class="meta-row">
+            <span class="meta-pill">1 μερίδα</span>
+            <span class="meta-pill">≈20′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 ντομάτα, χωρίς σπόρους, σε κύβους.</li>
+            <li>1/3 μελιτζάνας, σε κύβους.</li>
+            <li>1 κ.σ. σταφίδες.</li>
+            <li>2 κ.σ. ρύζι.</li>
+            <li>1 πρέζα κανέλα.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε όλα τα υλικά στην κανάτα.</li>
+            <li>Ατμός για περίπου 20′.</li>
+            <li>Μπλεντάρετε μέχρι να έχετε χοντρό πολτό.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε φυτικές ίνες, σίδηρο και υδατάνθρακες. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Κοτόπουλο με πατάτα &amp; ντομάτα</h3>
+          <div class="meta-row">
+            <span class="meta-pill">1 μερίδα</span>
+            <span class="meta-pill">20–25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 ντομάτα, χωρίς σπόρους, σε κύβους.</li>
+            <li>1 πατάτα, σε κύβους.</li>
+            <li>30&nbsp;g στήθος κοτόπουλο, σε μικρά κομμάτια.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε όλα τα υλικά στην κανάτα.</li>
+            <li>Ατμός για 20–25′.</li>
+            <li>Μπλεντάρετε με λίγο από το νερό μαγειρέματος.</li>
+          </ol>
+          <p class="nutrition-note">Πηγή πρωτεΐνης, σιδήρου και βιταμινών. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Μπρόκολο με βακαλάο &amp; πατάτα</h3>
+          <div class="meta-row">
+            <span class="meta-pill">1 μερίδα</span>
+            <span class="meta-pill">≈25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 πατάτα, σε κύβους.</li>
+            <li>90&nbsp;g μπρόκολο, σε ανθάκια.</li>
+            <li>30&nbsp;g φιλέτο βακαλάου, χωρίς κόκαλα.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Ατμός πατάτας και μπρόκολου για περίπου 15′.</li>
+            <li>Προσθέστε τον βακαλάο και συνεχίστε για άλλα 10′.</li>
+            <li>Μπλεντάρετε για λεία ή χοντρή υφή, ανάλογα με το στάδιο.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε ωμέγα‑3, πρωτεΐνη και ασβέστιο. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Μοσχάρι με καρότο &amp; κολοκυθάκι</h3>
+          <div class="meta-row">
+            <span class="meta-pill">1 μερίδα</span>
+            <span class="meta-pill">≈25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>30&nbsp;g άπαχο μοσχαρίσιο κρέας, σε κύβους.</li>
+            <li>1 καρότο, σε κύβους.</li>
+            <li>1/2 κολοκυθάκι, σε κύβους.</li>
+            <li>1 κ.σ. ρύζι.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε όλα τα υλικά στην κανάτα.</li>
+            <li>Ατμός για περίπου 25′.</li>
+            <li>Μπλεντάρετε, προσθέτοντας νερό ή ζωμό για την υφή που θέλετε.</li>
+          </ol>
+          <p class="nutrition-note">Πηγή πρωτεΐνης, σιδήρου και ψευδαργύρου. [web:22]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10–12 months -->
+    <section class="section-card" id="age-10-12m">
+      <div class="age-chip"><span>10–12 μηνών</span></div>
+      <h2>Συνταγές για νήπια 10–12 μηνών</h2>
+      <p>
+        Πλησιάζουμε τη δομή της οικογενειακής κουζίνας, με πιο έντονη υφή και εμφανή κομμάτια, πάντα όμως μαλακά και ασφαλή. [web:22]
+      </p>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3 class="recipe-title">Ριζότο με κοτόπουλο &amp; λαχανικά</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">≈25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>50&nbsp;g στήθος κοτόπουλο, σε μικρά κομμάτια.</li>
+            <li>1 καρότο, σε κύβους.</li>
+            <li>1/2 κολοκυθάκι, σε κύβους.</li>
+            <li>4 κ.σ. ρύζι arborio.</li>
+            <li>1 κ.γ. ελαιόλαδο.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε όλα τα υλικά στην κανάτα και προσθέστε περίπου 150&nbsp;ml νερό ή ζωμό.</li>
+            <li>Ατμός για 25′.</li>
+            <li>Μπλεντάρετε ελαφρά ή απλώς ανακατέψτε ώστε να μείνουν κομμάτια.</li>
+          </ol>
+          <p class="nutrition-note">Ολοκληρωμένο γεύμα με πρωτεΐνη, υδατάνθρακες και λαχανικά. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Φακές με καρότο &amp; ντομάτα</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">25–30′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>3 κ.σ. φακές, μουσκεμένες περίπου 2 ώρες.</li>
+            <li>1 καρότο, σε κύβους.</li>
+            <li>1 ντομάτα, χωρίς σπόρους, σε κύβους.</li>
+            <li>1/4 κρεμμύδι, ψιλοκομμένο.</li>
+            <li>1 κ.γ. ελαιόλαδο.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Τοποθετήστε όλα τα υλικά στην κανάτα.</li>
+            <li>Ατμός για 25–30′, μέχρι να μαλακώσουν οι φακές.</li>
+            <li>Μπλεντάρετε ελαφρά ή αφήστε χοντροκομμένο.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε φυτική πρωτεΐνη, σίδηρο και φυλλικό οξύ. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Σολομός με γλυκοπατάτα &amp; αρακά</h3>
+          <div class="meta-row">
+            <span class="meta-pill">1 μερίδα</span>
+            <span class="meta-pill">≈25′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>40&nbsp;g φιλέτο σολομού, χωρίς κόκαλα.</li>
+            <li>1 μικρή γλυκοπατάτα, σε κύβους.</li>
+            <li>50&nbsp;g αρακάς.</li>
+            <li>1 κ.γ. ελαιόλαδο.</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Ατμός γλυκοπατάτας και αρακά για περίπου 15′.</li>
+            <li>Προσθέστε τον σολομό και συνεχίστε για άλλα 10′.</li>
+            <li>Μπλεντάρετε ελαφρά ή τεμαχίστε με πιρούνι.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε ωμέγα‑3, πρωτεΐνη, βιταμίνη D και βήτα‑καροτίνη. [web:22]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Snacks -->
+    <section class="section-card" id="snacks">
+      <div class="age-chip"><span>10–12+ μηνών</span></div>
+      <h2>Επιδόρπια &amp; σνακ</h2>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3 class="recipe-title">Κομπόστα μήλου με κανέλα</h3>
+          <div class="meta-row">
+            <span class="meta-pill">3 μερίδες</span>
+            <span class="meta-pill">≈12′ ατμός</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>3 μήλα, σε κύβους.</li>
+            <li>1/2 κ.γ. κανέλα.</li>
+            <li>1 κ.γ. μέλι (μόνο για 12+ μηνών).</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Ατμός στα μήλα για περίπου 12′.</li>
+            <li>Μπλεντάρετε με την κανέλα.</li>
+            <li>Προσθέστε μέλι μόνο εάν το παιδί είναι άνω των 12 μηνών.</li>
+          </ol>
+          <p class="nutrition-note">Σερβίρεται και κρύα ως επιδόρπιο ή σνακ. [web:22]</p>
+        </article>
+
+        <article class="recipe-card">
+          <h3 class="recipe-title">Μους μπανάνας &amp; αβοκάντο</h3>
+          <div class="meta-row">
+            <span class="meta-pill">2 μερίδες</span>
+            <span class="meta-pill">Χωρίς ατμό</span>
+          </div>
+          <h4>Υλικά</h4>
+          <ul>
+            <li>1 ώριμη μπανάνα.</li>
+            <li>1/2 ώριμο αβοκάντο.</li>
+            <li>2 κ.σ. γιαούρτι (για 8+ μηνών).</li>
+          </ul>
+          <h4>Εκτέλεση</h4>
+          <ol>
+            <li>Βάλτε όλα τα υλικά στην κανάτα (χωρίς ατμό).</li>
+            <li>Μπλεντάρετε 20–30&nbsp;δευτ. μέχρι να γίνει κρέμα.</li>
+          </ol>
+          <p class="nutrition-note">Πλούσιο σε υγιεινά λιπαρά, κάλιο και βιταμίνες. [web:22]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Storage & safety -->
+    <section class="tips-card" id="storage-safety">
+      <h2>Αποθήκευση, υγιεινή &amp; αλλεργίες</h2>
+
+      <h3 class="section-heading">Αποθήκευση</h3>
+      <ul class="tip-list">
+        <li>Φυλάξτε τα γεύματα σε αεροστεγή δοχεία.</li>
+        <li>Στο ψυγείο έως 48 ώρες· στην κατάψυξη έως περίπου 2 μήνες σε μικρές μερίδες. [web:22]</li>
+        <li>Χρησιμοποιήστε δοχεία κατάλληλα για βρεφική τροφή, BPA‑free όπου αναφέρεται.</li>
+      </ul>
+
+      <h3 class="section-heading">Απόψυξη &amp; θέρμανση</h3>
+      <ul class="tip-list">
+        <li>Αποψύξτε στο ψυγείο ή με τη λειτουργία απόψυξης/θέρμανσης της συσκευής. [web:26]</li>
+        <li>Θερμάνετε 5–10′ στον ατμό και ανακατέψτε καλά για ομοιόμορφη θερμοκρασία.</li>
+        <li>Ελέγχετε πάντα τη θερμοκρασία πριν το σερβίρισμα.</li>
+        <li>Μην ξαναθερμαίνετε το ίδιο γεύμα δεύτερη φορά.</li>
+      </ul>
+
+      <h3 class="section-heading">Υγιεινή &amp; ασφάλεια</h3>
+      <ul class="tip-list">
+        <li>Πλένετε καλά φρούτα και λαχανικά, αφαιρώντας φλοιό, σπόρους και κουκούτσια. [web:26]</li>
+        <li>Πλένετε κανάτα και λεπίδα μετά από κάθε χρήση (σύμφωνα με το εγχειρίδιο, μπορούν να μπουν στο πλυντήριο πιάτων όπου επιτρέπεται). [web:26]</li>
+        <li>Καθαρίζετε και αποψαλτώνετε τακτικά τη δεξαμενή νερού, ακολουθώντας τις οδηγίες της Philips. [web:26]</li>
+      </ul>
+
+      <h3 class="section-heading">Αλλεργίες</h3>
+      <ul class="tip-list">
+        <li>Εισάγετε μία νέα τροφή κάθε φορά και περιμένετε 3–5 μέρες πριν τη επόμενη. [web:22]</li>
+        <li>Παρακολουθήστε για εξάνθημα, εμετό, διάρροια ή δυσκολία στην αναπνοή – σε τέτοια συμπτώματα επικοινωνήστε άμεσα με γιατρό.</li>
+        <li>Συχνά αλλεργιογόνα: αυγό, γάλα, ψάρι, ξηροί καρποί· συζητήστε με τον παιδίατρο για το κατάλληλο timing. [web:22]</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Βασισμένο σε πληροφορίες για το Philips Avent SCF883/01 και ενδεικτικές συνταγές βρεφικής &amp; νηπιακής διατροφής της Philips Avent. [web:2][web:22][web:26]
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const body = document.body;
+      const navToggle = document.getElementById('navToggle');
+      const navMenuMobile = document.getElementById('navMenuMobile');
+      const themeToggleDesktop = document.getElementById('themeToggle');
+      const themeToggleMobile = document.getElementById('themeToggleMobile');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const storedTheme = window.localStorage.getItem('avent-theme');
+
+      function applyTheme(mode) {
+        if (mode === 'dark') {
+          body.classList.add('dark');
+        } else {
+          body.classList.remove('dark');
+        }
+      }
+
+      const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+      applyTheme(initialTheme);
+
+      function toggleTheme() {
+        const isDark = body.classList.toggle('dark');
+        window.localStorage.setItem('avent-theme', isDark ? 'dark' : 'light');
+      }
+
+      if (themeToggleDesktop) themeToggleDesktop.addEventListener('click', toggleTheme);
+      if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+
+      if (navToggle && navMenuMobile) {
+        navToggle.addEventListener('click', function() {
+          const open = navMenuMobile.classList.toggle('open');
+          navToggle.classList.toggle('open', open);
+        });
+
+        navMenuMobile.addEventListener('click', function(e) {
+          if (e.target.matches('a.nav-link')) {
+            navMenuMobile.classList.remove('open');
+            navToggle.classList.remove('open');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
