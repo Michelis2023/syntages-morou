@@ -4,8 +4,23 @@
   <meta charset="UTF-8">
   <title>Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-        content="Συνταγές βρεφικής τροφής για τον Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01): οδηγίες, χρόνοι ατμού, υφές ανά ηλικία, συμβουλές ασφάλειας.">
+  <meta name="description" content="Ολοκληρωμένος οδηγός συνταγών για Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01). Συνταγές για 6+, 7-9, 10-12 μηνών με χρόνους ατμού και οδηγίες ασφάλειας.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michelis2023.github.io/syntages-morou/">
+  <meta property="og:title" content="Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1">
+  <meta property="og:description" content="Ολοκληρωμένος οδηγός συνταγών για το Philips Avent Premium 4-in-1 Steamer Blender με συνταγές ανά ηλικία.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://michelis2023.github.io/syntages-morou/">
+  <meta property="twitter:title" content="Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1">
+  <meta property="twitter:description" content="Ολοκληρωμένος οδηγός συνταγών για το Philips Avent Premium 4-in-1 Steamer Blender με συνταγές ανά ηλικία.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍼</text></svg>">
+  
   <style>
     :root {
       --bg: #fafafa;
@@ -284,6 +299,16 @@
       padding: 3px;
       cursor: pointer;
       box-shadow: inset 0 0 0 1px rgba(0,0,0,0.07);
+      transition: background-color 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+      opacity: 0.8;
+    }
+
+    .theme-toggle:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
     }
 
     .theme-toggle-knob {
@@ -311,6 +336,56 @@
       font-size: 0.72rem;
       color: var(--muted);
       white-space: nowrap;
+    }
+
+    /* SCROLL TO TOP BUTTON */
+
+    .scroll-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+      z-index: 30;
+      transform: translateY(10px);
+    }
+
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-to-top:hover {
+      background: var(--link-hover);
+      transform: translateY(-3px);
+    }
+
+    .scroll-to-top:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 767px) {
+      .scroll-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+      }
     }
 
     /* PAGE CONTENT */
@@ -546,6 +621,17 @@
       color: var(--primary);
     }
 
+    .disclaimer {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-style: italic;
+      padding: 0.75rem;
+      background: var(--primary-light);
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      border-left: 3px solid var(--primary);
+    }
+
     footer {
       margin-top: 1.8rem;
       font-size: 0.8rem;
@@ -576,14 +662,14 @@
       </div>
 
       <div class="nav-links nav-links-desktop">
-        <a class="nav-link primary-link" href="#top">Αρχή</a>
-        <a class="nav-link" href="#age-6m">6+ μηνών</a>
-        <a class="nav-link" href="#age-7-9m">7–9 μηνών</a>
-        <a class="nav-link" href="#age-10-12m">10–12 μηνών</a>
-        <a class="nav-link" href="#snacks">Σνακ</a>
-        <a class="nav-link" href="#storage-safety">Αποθήκευση</a>
+        <a class="nav-link primary-link" href="#top" aria-label="Μετάβαση στην αρχή της σελίδας">Αρχή</a>
+        <a class="nav-link" href="#age-6m" aria-label="Συνταγές για 6+ μηνών">6+ μηνών</a>
+        <a class="nav-link" href="#age-7-9m" aria-label="Συνταγές για 7-9 μηνών">7–9 μηνών</a>
+        <a class="nav-link" href="#age-10-12m" aria-label="Συνταγές για 10-12 μηνών">10–12 μηνών</a>
+        <a class="nav-link" href="#snacks" aria-label="Επιδόρπια και σνακ">Σνακ</a>
+        <a class="nav-link" href="#storage-safety" aria-label="Οδηγίες αποθήκευσης και ασφάλειας">Αποθήκευση</a>
         <div class="controls-row">
-          <div class="theme-toggle" id="themeToggle" aria-label="Εναλλαγή θέματος" role="button">
+          <div class="theme-toggle" id="themeToggle" aria-label="Εναλλαγή φωτεινού/σκοτεινού θέματος" role="button" tabindex="0">
             <div class="theme-toggle-knob">
               <span class="theme-toggle-icon">☀️</span>
             </div>
@@ -592,10 +678,10 @@
       </div>
 
       <div class="controls-row">
-        <button class="nav-toggle" id="navToggle" aria-label="Εναλλαγή μενού">
+        <button class="nav-toggle" id="navToggle" aria-label="Άνοιγμα/κλείσιμο μενού πλοήγησης" aria-expanded="false">
           <span></span>
         </button>
-        <div class="theme-toggle" id="themeToggleMobile" aria-label="Εναλλαγή θέματος" role="button">
+        <div class="theme-toggle" id="themeToggleMobile" aria-label="Εναλλαγή φωτεινού/σκοτεινού θέματος" role="button" tabindex="0">
           <div class="theme-toggle-knob">
             <span class="theme-toggle-icon">☀️</span>
           </div>
@@ -605,15 +691,20 @@
 
     <div class="nav-menu-mobile" id="navMenuMobile">
       <div class="nav-menu-inner">
-        <a class="nav-link primary-link" href="#top">Αρχή</a>
-        <a class="nav-link" href="#age-6m">6+ μηνών</a>
-        <a class="nav-link" href="#age-7-9m">7–9 μηνών</a>
-        <a class="nav-link" href="#age-10-12m">10–12 μηνών</a>
-        <a class="nav-link" href="#snacks">Σνακ</a>
-        <a class="nav-link" href="#storage-safety">Αποθήκευση</a>
+        <a class="nav-link primary-link" href="#top" aria-label="Μετάβαση στην αρχή της σελίδας">Αρχή</a>
+        <a class="nav-link" href="#age-6m" aria-label="Συνταγές για 6+ μηνών">6+ μηνών</a>
+        <a class="nav-link" href="#age-7-9m" aria-label="Συνταγές για 7-9 μηνών">7–9 μηνών</a>
+        <a class="nav-link" href="#age-10-12m" aria-label="Συνταγές για 10-12 μηνών">10–12 μηνών</a>
+        <a class="nav-link" href="#snacks" aria-label="Επιδόρπια και σνακ">Σνακ</a>
+        <a class="nav-link" href="#storage-safety" aria-label="Οδηγίες αποθήκευσης και ασφάλειας">Αποθήκευση</a>
       </div>
     </div>
   </nav>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Επιστροφή στην κορυφή της σελίδας">
+    ↑
+  </button>
 
   <div class="page" id="top">
     <header class="main-header">
@@ -630,8 +721,11 @@
         Το Philips Avent Premium 4‑in‑1 Steamer Blender (SCF883/01) συνδυάζει ατμομαγείρεμα, μπλένταρισμα, απόψυξη και θέρμανση σε μία κανάτα 1&nbsp;λίτρου, με τεχνολογία ατμού που βοηθά στη διατήρηση θρεπτικών συστατικών και υφής.
       </p>
       <p>
-        Οι συνταγές είναι οργανωμένες ανά ηλικία (6+, 7‑9, 10‑12 μηνών) και βασίζονται σε κατευθύνσεις της Philips Avent για ασφαλή εισαγωγή στερεών τροφών. Πριν δοκιμάσετε κάτι νέο, βεβαιωθείτε ότι συμφωνεί ο παιδίατρός σας.
+        Οι συνταγές είναι οργανωμένες ανά ηλικία (6+, 7‑9, 10‑12 μηνών) και βασίζονται σε κατευθύνσεις της Philips Avent για ασφαλή εισαγωγή στερεών τροφών.
       </p>
+      <div class="disclaimer">
+        ⚠️ <strong>Σημαντικό:</strong> Συμβουλευτείτε τον παιδίατρό σας πριν εισάγετε οποιαδήποτε νέα τροφή στη διατροφή του μωρού σας.
+      </div>
       <h4>Βασικές οδηγίες χρήσης</h4>
       <ul class="tip-list">
         <li>Κόψτε τα υλικά σε κύβους περίπου 1&nbsp;cm για ομοιόμορφο μαγείρεμα.</li>
@@ -639,7 +733,7 @@
         <li>Όταν ακουστεί το μπιπ, αναποδογυρίστε την κανάτα και μπλεντάρετε σε παλμούς 15&nbsp;δευτ. μέχρι την επιθυμητή υφή.</li>
       </ul>
       <div class="tag-row">
-        <span class="tag">Απογαλάκτιση</span>
+        <span class="tag">Απογαλακτισμός</span>
         <span class="tag">Βρεφική τροφή</span>
         <span class="tag">Ατμομάγειρας &amp; μπλέντερ</span>
         <span class="tag">Philips Avent</span>
@@ -1407,7 +1501,10 @@
 
     <footer>
       <p>
-        Βασισμένο σε πληροφορίες για το Philips Avent SCF883/01 και ενδεικτικές συνταγές βρεφικής &amp; νηπιακής διατροφής της Philips Avent από επίσημα φυλλάδια συνταγών.
+        Βασισμένο σε πληροφορίες για το Philips Avent SCF883/01 και ενδεικτικές συνταγές απογαλακτισμού από επίσημα φυλλάδια της Philips Avent.
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+        © 2026 Συνταγές Βρεφικής Τροφής Philips Avent • Με αγάπη για υγιή διατροφή
       </p>
     </footer>
   </div>
@@ -1419,9 +1516,11 @@
       const navMenuMobile = document.getElementById('navMenuMobile');
       const themeToggleDesktop = document.getElementById('themeToggle');
       const themeToggleMobile = document.getElementById('themeToggleMobile');
+      const scrollToTopBtn = document.getElementById('scrollToTop');
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       const storedTheme = window.localStorage.getItem('avent-theme');
 
+      // Theme application
       function applyTheme(mode) {
         if (mode === 'dark') {
           body.classList.add('dark');
@@ -1433,27 +1532,114 @@
       const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
       applyTheme(initialTheme);
 
+      // Theme toggle
       function toggleTheme() {
         const isDark = body.classList.toggle('dark');
         window.localStorage.setItem('avent-theme', isDark ? 'dark' : 'light');
       }
 
-      if (themeToggleDesktop) themeToggleDesktop.addEventListener('click', toggleTheme);
-      if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+      if (themeToggleDesktop) {
+        themeToggleDesktop.addEventListener('click', toggleTheme);
+        themeToggleDesktop.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleTheme();
+          }
+        });
+      }
 
+      if (themeToggleMobile) {
+        themeToggleMobile.addEventListener('click', toggleTheme);
+        themeToggleMobile.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleTheme();
+          }
+        });
+      }
+
+      // Mobile navigation
       if (navToggle && navMenuMobile) {
         navToggle.addEventListener('click', function() {
           const open = navMenuMobile.classList.toggle('open');
           navToggle.classList.toggle('open', open);
+          navToggle.setAttribute('aria-expanded', open);
         });
 
+        // Close mobile menu when link is clicked
         navMenuMobile.addEventListener('click', function(e) {
           if (e.target.matches('a.nav-link')) {
             navMenuMobile.classList.remove('open');
             navToggle.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!navToggle.contains(e.target) && !navMenuMobile.contains(e.target)) {
+            if (navMenuMobile.classList.contains('open')) {
+              navMenuMobile.classList.remove('open');
+              navToggle.classList.remove('open');
+              navToggle.setAttribute('aria-expanded', 'false');
+            }
           }
         });
       }
+
+      // Scroll to top button
+      if (scrollToTopBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 400) {
+            scrollToTopBtn.classList.add('visible');
+          } else {
+            scrollToTopBtn.classList.remove('visible');
+          }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+        // Keyboard accessibility for scroll to top
+        scrollToTopBtn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#top') {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          } else {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              const navbarHeight = document.querySelector('.navbar').offsetHeight;
+              const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
     })();
   </script>
 </body>
