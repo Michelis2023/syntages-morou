@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Συνταγές για Μωρά - Υγιεινές και Θρεπτικές Συνταγές για κάθε Στάδιο Απογαλακτισμού">
+    <meta name="description" content="Συνταγές για Μωρά - Υγιεινές και Θρεπτικές Συνταγές με Αναλυτικές Οδηγίες Παρασκευής">
     <title>Συνταγές για Μωρά | Υγιεινή Διατροφή για το Μωρό σας</title>
     <style>
         * {
@@ -89,6 +89,9 @@
             box-shadow: var(--shadow);
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .nav-tabs ul {
@@ -173,47 +176,44 @@
             font-weight: bold;
         }
 
-        /* Recipe Grid */
-        .recipe-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .recipe-card {
+        /* Recipe Detail Styles */
+        .recipe-detail {
             background: var(--bg-white);
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--border-color);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 2rem;
+            margin: 2rem 0;
             transition: all 0.3s ease;
-            cursor: pointer;
         }
 
-        .recipe-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+        .recipe-detail:hover {
             border-color: var(--primary-color);
+            box-shadow: var(--shadow-hover);
         }
 
-        .recipe-card h4 {
+        .recipe-detail h4 {
             color: var(--primary-color);
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bg-light);
         }
 
         .recipe-meta {
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
-            margin: 1rem 0;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 8px;
         }
 
         .recipe-badge {
-            padding: 0.4rem 0.8rem;
+            padding: 0.5rem 1rem;
             border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
+            font-size: 0.9rem;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
             gap: 0.3rem;
@@ -237,6 +237,89 @@
         .badge-vegetarian {
             background: #F3E5F5;
             color: #7B1FA2;
+        }
+
+        .ingredients-section,
+        .instructions-section,
+        .nutrition-section {
+            margin: 2rem 0;
+        }
+
+        .ingredients-section h5,
+        .instructions-section h5,
+        .nutrition-section h5 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .ingredients-list {
+            background: #FFF9E6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .ingredients-list ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .ingredients-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .instructions-list {
+            counter-reset: step-counter;
+        }
+
+        .instructions-list li {
+            counter-increment: step-counter;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            background: var(--bg-light);
+            border-radius: 8px;
+            position: relative;
+            padding-left: 4rem;
+            transition: all 0.3s ease;
+        }
+
+        .instructions-list li:hover {
+            background: #E3F2FD;
+            transform: translateX(5px);
+        }
+
+        .instructions-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
 
         /* Info Boxes */
@@ -391,8 +474,12 @@
                 font-size: 1.3rem;
             }
 
-            .recipe-grid {
-                grid-template-columns: 1fr;
+            .recipe-detail {
+                padding: 1.5rem;
+            }
+
+            .instructions-list li {
+                padding-left: 3.5rem;
             }
 
             .stage-grid {
@@ -430,6 +517,18 @@
                 font-size: 0.75rem;
                 padding: 0.3rem 0.6rem;
             }
+
+            .instructions-list li {
+                padding-left: 3rem;
+                font-size: 0.9rem;
+            }
+
+            .instructions-list li::before {
+                width: 1.5rem;
+                height: 1.5rem;
+                font-size: 0.9rem;
+                left: 0.5rem;
+            }
         }
 
         /* Smooth Scroll */
@@ -459,7 +558,7 @@
     <header>
         <div class="container">
             <h1>🍼 Συνταγές για Μωρά 🥕</h1>
-            <p>Υγιεινές και Θρεπτικές Συνταγές από το Philips Avent</p>
+            <p>Υγιεινές και Θρεπτικές Συνταγές με Αναλυτικές Οδηγίες από το Philips Avent</p>
         </div>
     </header>
 
@@ -481,7 +580,7 @@
         <!-- Introduction Section -->
         <section id="intro">
             <h2>Καλώς Ήρθατε</h2>
-            <p>Η εισαγωγή του μωρού σας στα στερεά τρόφιμα είναι μια συναρπαστική διαδικασία. Αυτός ο οδηγός περιέχει επαγγελματικές συμβουλές και δοκιμασμένες συνταγές για κάθε στάδιο του απογαλακτισμού.</p>
+            <p>Η εισαγωγή του μωρού σας στα στερεά τρόφιμα είναι μια συναρπαστική διαδικασία. Αυτός ο οδηγός περιέχει επαγγελματικές συμβουλές και δοκιμασμένες συνταγές με <strong>αναλυτικές οδηγίες παρασκευής</strong> για κάθε στάδιο του απογαλακτισμού.</p>
             
             <div class="info-box">
                 <h3>🎯 Στόχος μας</h3>
@@ -489,21 +588,21 @@
             </div>
 
             <h3>📊 Οι 4 Κύριες Ομάδες Τροφίμων</h3>
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h4>🌾 Αμυλούχα</h4>
+            <div class="stage-grid">
+                <div class="stage-card">
+                    <h4 style="color: var(--primary-color);">🌾 Αμυλούχα</h4>
                     <p>Ρύζι, ζυμαρικά, πατάτες, δημητριακά</p>
                 </div>
-                <div class="recipe-card">
-                    <h4>🍖 Πρωτεϊνες</h4>
+                <div class="stage-card">
+                    <h4 style="color: var(--primary-color);">🍖 Πρωτεΐνες</h4>
                     <p>Κρέας, ψάρι, αυγά, όσπρια</p>
                 </div>
-                <div class="recipe-card">
-                    <h4>🥕 Φρούτα & Λαχανικά</h4>
+                <div class="stage-card">
+                    <h4 style="color: var(--primary-color);">🥕 Φρούτα & Λαχανικά</h4>
                     <p>Φρέσκα, βρασμένα, πουρέ</p>
                 </div>
-                <div class="recipe-card">
-                    <h4>🧀 Γαλακτοκομικά</h4>
+                <div class="stage-card">
+                    <h4 style="color: var(--primary-color);">🧀 Γαλακτοκομικά</h4>
                     <p>Πλήρη λιπαρά γιαούρτι, τυρί</p>
                 </div>
             </div>
@@ -515,25 +614,25 @@
             <div class="stage-grid">
                 <div class="stage-card">
                     <div class="stage-number">1</div>
-                    <h3>Πρώτες Γεύσεις</h3>
+                    <h3 style="font-size: 1.3rem; margin: 0;">Πρώτες Γεύσεις</h3>
                     <p><strong>4-6 μήνες</strong></p>
                     <p>Λεία πουρέ, ήπιες γεύσεις</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">2</div>
-                    <h3>Απαλά & Λεία</h3>
+                    <h3 style="font-size: 1.3rem; margin: 0;">Απαλά & Λεία</h3>
                     <p><strong>6-8 μήνες</strong></p>
                     <p>Πιο πυκνά πουρέ, δυνατότερες γεύσεις</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">3</div>
-                    <h3>Κομματάκια</h3>
+                    <h3 style="font-size: 1.3rem; margin: 0;">Κομματάκια</h3>
                     <p><strong>9-12 μήνες</strong></p>
                     <p>Κομματιασμένα, μασημένα τρόφιμα</p>
                 </div>
                 <div class="stage-card">
                     <div class="stage-number">4</div>
-                    <h3>Από 1 Έτους</h3>
+                    <h3 style="font-size: 1.3rem; margin: 0;">Από 1 Έτους</h3>
                     <p><strong>12+ μήνες</strong></p>
                     <p>Οικογενειακά γεύματα</p>
                 </div>
@@ -554,52 +653,177 @@
             <h2>Στάδιο 1: Πρώτες Γεύσεις (4-6 μήνες)</h2>
             <p>Πολύ λεία και αραιά πουρέ με ήπιες γεύσεις. Αρχίστε με μερικά κουταλάκια μία φορά την ημέρα.</p>
 
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h4>🥔 Πουρέ Πατάτας και Μπρόκολο</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> ½ μεγάλη πατάτα, ½ μικρό μπρόκολο</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Βιταμίνη K, πηγή Βιταμίνης C</p>
+            <!-- Recipe 1: Potato and Broccoli -->
+            <div class="recipe-detail">
+                <h4>🥔 Πουρέ Πατάτας και Μπρόκολο</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🎃 Κολοκύθα Sunshine</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μεγάλη πατάτα (περίπου 200g)</li>
+                            <li>½ μικρό μπρόκολο (περίπου 200g)</li>
+                        </ul>
                     </div>
-                    <p><strong>Υλικά:</strong> ½ μεσαία κολοκύθα butternut</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσια σε Βιταμίνη A</p>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🥑 Πουρέ Μπανάνας και Αβοκάντο</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 10 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 1 μερίδα</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> ½ αβοκάντο, ½ μπανάνα, 60ml γάλα</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Φολικό οξύ</p>
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε το μπρόκολο και ξεφλουδίστε και πλύνετε την πατάτα. Κόψτε την πατάτα και το μπρόκολο σε κυβάκια περίπου 1 cm.</li>
+                        <li>Αφαιρέστε το καπάκι του δοχείου και βάλτε όλα τα υλικά μέσα. Τοποθετήστε ξανά και κλειδώστε το καπάκι στη σωστή θέση.</li>
+                        <li>Αφαιρέστε το καπάκι του δοχείου νερού και γεμίστε νερό μέχρι το επίπεδο '20 min'.</li>
+                        <li>Τοποθετήστε ξανά και κλειδώστε το καπάκι. Πατήστε για να κλειδώσετε το δοχείο στη θέση ατμού.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 20 λεπτά. Θα ξεκινήσει αυτόματα και θα σταματήσει μετά από 20 λεπτά.</li>
+                        <li>Γυρίστε το κουμπί ατμού πίσω στη θέση 'OFF'.</li>
+                        <li>Αναποδογυρίστε το δοχείο.</li>
+                        <li>Τοποθετήστε το δοχείο στη βασική μονάδα, περιστρέψτε δεξιόστροφα και κλειδώστε το στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα η κάθε μία, μέχρι να πετύχετε την επιθυμητή υφή. Προσθέστε λίγο από το συνηθισμένο γάλα του μωρού ή βρασμένο νερό αν θέλετε να το αραιώσετε.</li>
+                    </ol>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🍎 Πουρέ Μήλου</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 25 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Βιταμίνη K</p>
+                        <p><strong>Πηγή:</strong> Βιταμίνη C & Φολικό Οξύ</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με βρεφικό ρύζι ή το συνηθισμένο γάλα του μωρού. Δοκιμάστε με γλυκοπατάτα αντί για πατάτα.</p>
                     </div>
-                    <p><strong>Υλικά:</strong> 2 μεσαία ώριμα μήλα</p>
-                    <p><strong>Θρεπτικά:</strong> Πηγή φυτικών ινών</p>
+                </div>
+            </div>
+
+            <!-- Recipe 2: Sunshine Squash -->
+            <div class="recipe-detail">
+                <h4>🎃 Κολοκύθα Sunshine</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μεσαία κολοκύθα butternut (περίπου 300g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε, ξεφλουδίστε και κόψτε στη μέση την κολοκύθα butternut. Αφαιρέστε τους σπόρους. Κόψτε την κολοκύθα σε κυβάκια περίπου 1 cm.</li>
+                        <li>Αφαιρέστε το καπάκι του δοχείου και βάλτε όλα τα υλικά μέσα. Τοποθετήστε ξανά και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Κλειδώστε το καπάκι και το δοχείο στη θέση ατμού.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Γυρίστε το κουμπί ατμού στο 'OFF' μετά το τέλος.</li>
+                        <li>Αναποδογυρίστε το δοχείο και κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα μέχρι να πετύχετε την επιθυμητή υφή.</li>
+                        <li>Προσθέστε γάλα ή βρασμένο νερό για αραίωση αν χρειάζεται.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Βιταμίνη A</p>
+                        <p><strong>Συμβουλές:</strong> Πλούσια σε β-καροτένιο για υγιή όραση και δέρμα</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 3: Banana and Avocado -->
+            <div class="recipe-detail">
+                <h4>🥑 Πουρέ Μπανάνας και Αβοκάντο</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 10 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Χωρίς μαγείρεμα</span>
+                    <span class="recipe-badge badge-portions">🍽️ 1 μερίδα</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μεσαίο αβοκάντο (ώριμο, περίπου 50g)</li>
+                            <li>½ μεσαία μπανάνα (ώριμη, περίπου 50g)</li>
+                            <li>60ml γάλα του μωρού (παρασκευασμένο κανονικά)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Κόψτε το αβοκάντο στη μέση. Αφαιρέστε το κουκούτσι και βγάλτε τη σάρκα με ένα κουτάλι. Ξεφλουδίστε τη μπανάνα.</li>
+                        <li>Κόψτε το αβοκάντο και τη μπανάνα σε κυβάκια 1 cm.</li>
+                        <li>Αφαιρέστε το καπάκι του δοχείου. Βάλτε όλα τα φρούτα και το γάλα μέσα. Κλειδώστε το καπάκι.</li>
+                        <li>Τοποθετήστε το δοχείο στη βασική μονάδα και κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 3-5 φορές για 10 δευτερόλεπτα μέχρι να πετύχετε την επιθυμητή υφή.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Φολικό Οξύ</p>
+                        <p><strong>Πηγή:</strong> Βιταμίνη C, E, Κάλιο, Β6 & K</p>
+                        <p><strong>Συμβουλές:</strong> Καλύτερα να σερβιριστεί αμέσως μετά την παρασκευή. Δοκιμάστε με παπάγια αντί για μπανάνα.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 4: Apple Purée -->
+            <div class="recipe-detail">
+                <h4>🍎 Πουρέ Μήλου</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 25 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>2 μεσαία μήλα (ώριμα, περίπου 300g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε, ξεφλουδίστε και αφαιρέστε το κουκούτσι από τα μήλα. Κόψτε τα σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Κλειδώστε και ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Μετά το τέλος, γυρίστε στο 'OFF' και αναποδογυρίστε το δοχείο.</li>
+                        <li>Κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 2-3 φορές για 10 δευτερόλεπτα μέχρι την επιθυμητή υφή.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Πηγή:</strong> Φυτικών ινών</p>
+                        <p><strong>Συμβουλές:</strong> Εξαιρετικό για την πέψη</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -614,74 +838,264 @@
                 <p>Μπορεί να χρειαστούν <strong>έως και 15 δοκιμές</strong> πριν το μωρό δεχτεί μια νέα τροφή. Μην το παρατήσετε!</p>
             </div>
 
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h4>🥕 Παράδεισος Λαχανικών</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> Κουνουπίδι, πατάτα, καρότο</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Βιταμίνη C</p>
+            <!-- Recipe 5: Veggie Heaven -->
+            <div class="recipe-detail">
+                <h4>🥕 Παράδεισος Λαχανικών</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🍖 Πουρέ Κρέατος</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>¼ μικρό κουνουπίδι (περίπου 130g)</li>
+                            <li>½ μεσαία πατάτα (περίπου 145g)</li>
+                            <li>1 μεσαίο καρότο (περίπου 100g)</li>
+                        </ul>
                     </div>
-                    <p><strong>Υλικά:</strong> Φιλέτο μοσχάρι/αρνί/κοτόπουλο, λαχανικά</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε σίδηρο</p>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🐟 Σολομός με Γλυκοπατάτα</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 30 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> Φιλέτο σολομού, γλυκοπατάτες, κολοκυθάκι</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Ωμέγα-3</p>
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε το κουνουπίδι και ξεφλουδίστε και πλύνετε την πατάτα και το καρότο. Κόψτε τα λαχανικά σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Κλειδώστε και ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, γυρίστε στο 'OFF'.</li>
+                        <li>Αναποδογυρίστε το δοχείο και κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 2-3 φορές για 15 δευτερόλεπτα.</li>
+                    </ol>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🟢 Πουρέ Αρακά</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 2 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Βιταμίνη C</p>
+                        <p><strong>Πηγή:</strong> Βιταμίνη B6, A & K</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με πουρέ κρέατος ή ψαριού. Αναμείξτε με τα αγαπημένα σας λαχανικά.</p>
                     </div>
-                    <p><strong>Υλικά:</strong> Κατεψυγμένος αρακάς, γλυκοπατάτες</p>
-                    <p><strong>Θρεπτικά:</strong> Πηγή πρωτεΐνης</p>
+                </div>
+            </div>
+
+            <!-- Recipe 6: Meaty Purée -->
+            <div class="recipe-detail">
+                <h4>🍖 Πουρέ Κρέατος</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🍑 Επιδόρπιο Ροδάκινο-Δαμάσκηνο</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 30 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 1 μερίδα</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>1 φιλέτο μοσχάρι/αρνί/στήθος κοτόπουλο (περίπου 250g)</li>
+                            <li>3 κουταλιές σούπας πουρέ λαχανικών (από σελ. 18)</li>
+                        </ul>
                     </div>
-                    <p><strong>Υλικά:</strong> Ροδάκινο, δαμάσκηνο, γιαούρτι</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε αντιοξειδωτικά</p>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🍗 Κοτόπουλο-Πατάτα-Μήλο</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Αφαιρέστε το δέρμα και το λίπος από το κρέας. Κόψτε το κρέας σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Κλειδώστε και ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, γυρίστε στο 'OFF' και αναποδογυρίστε το δοχείο.</li>
+                        <li>Κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα.</li>
+                        <li>Μεταφέρετε σε μπολ και αφήστε να κρυώσει πριν σερβίρετε 1 μερίδα. Αν χρειάζεται, αναμείξτε 1 κουταλιά κρέατος με 3 κουταλιές πουρέ λαχανικών.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Σίδηρος</p>
+                        <p><strong>Συμβουλές:</strong> Απαραίτητο για την ανάπτυξη του μωρού</p>
                     </div>
-                    <p><strong>Υλικά:</strong> Στήθος κοτόπουλο, γλυκοπατάτες, μήλο</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Βιταμίνη A</p>
+                </div>
+            </div>
+
+            <!-- Recipe 7: Salmon with Sweet Potato -->
+            <div class="recipe-detail">
+                <h4>🐟 Σολομός με Γλυκοπατάτα και Κολοκυθάκι</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 30 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>1 φιλέτο σολομού (περίπου 100g)</li>
+                            <li>2 μικρές γλυκοπατάτες (περίπου 185g)</li>
+                            <li>½ μεσαίο κολοκυθάκι (περίπου 90g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε το κολοκυθάκι και ξεφλουδίστε και πλύνετε τις γλυκοπατάτες. Αφαιρέστε τα κόκαλα και το δέρμα από τον σολομό.</li>
+                        <li>Κόψτε τα λαχανικά και τον σολομό σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Κλειδώστε και ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Μετά το τέλος, γυρίστε στο 'OFF' και αναποδογυρίστε το δοχείο.</li>
+                        <li>Κλειδώστε στη θέση ανάμειξης.</li>
+                        <li>Κάντε ανάμειξη 2-3 φορές για 15 δευτερόλεπτα.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Ωμέγα-3</p>
+                        <p><strong>Πηγή:</strong> Σελήνιο, Ιώδιο, Βιταμίνη D</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 8: Easy Pea-sy Purée -->
+            <div class="recipe-detail">
+                <h4>🟢 Πουρέ Αρακά</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 2 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>100g κατεψυγμένος αρακάς</li>
+                            <li>2 μικρές γλυκοπατάτες (περίπου 150g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Ξεπαγώστε και πλύνετε τον αρακά. Πλύνετε και ξεφλουδίστε τις γλυκοπατάτες.</li>
+                        <li>Κόψτε τις γλυκοπατάτες σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε και κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα.</li>
+                        <li>Προσθέστε γάλα ή βρασμένο νερό για αραίωση αν χρειάζεται.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Πηγή:</strong> Πρωτεΐνης και φυτικών ινών</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 9: Peach and Plum Dessert -->
+            <div class="recipe-detail">
+                <h4>🍑 Επιδόρπιο Ροδάκινο-Δαμάσκηνο</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 30 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 10 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 1 μερίδα</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μεσαίο ροδάκινο (ώριμο, περίπου 60g)</li>
+                            <li>1 μεγάλο δαμάσκηνο (ώριμο, περίπου 45g)</li>
+                            <li>20g γιαούρτι</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε, ξεφλουδίστε και αφαιρέστε το κουκούτσι από τα φρούτα. Κόψτε τα σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε τα φρούτα στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 10 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε και κάντε ανάμειξη 2-3 φορές για 10 δευτερόλεπτα.</li>
+                        <li>Μεταφέρετε σε μπολ, αφήστε να κρυώσει και αναμείξτε με το γιαούρτι πριν σερβίρετε.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Αντιοξειδωτικά</p>
+                        <p><strong>Συμβουλές:</strong> Προσθέστε μπανάνα, μήλο ή παπάγια. Αναμείξτε με κρέμα αντί για γιαούρτι.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 10: Chicken, Potato and Apple -->
+            <div class="recipe-detail">
+                <h4>🍗 Κοτόπουλο-Πατάτα-Μήλο</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>¼ φιλέτο στήθος κοτόπουλο (περίπου 80g)</li>
+                            <li>2 μικρές γλυκοπατάτες (περίπου 225g)</li>
+                            <li>½ μικρό μήλο (ώριμο, περίπου 70g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε, ξεφλουδίστε και αφαιρέστε το κουκούτσι από το μήλο. Ξεφλουδίστε και πλύνετε τις γλυκοπατάτες.</li>
+                        <li>Αφαιρέστε το δέρμα και το λίπος από το στήθος κοτόπουλο.</li>
+                        <li>Κόψτε όλα τα υλικά σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε και κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Βιταμίνη A</p>
+                        <p><strong>Πηγή:</strong> Βιταμίνη C, B6 & Νιασίνη</p>
+                        <p><strong>Συμβουλές:</strong> Προσθέστε παστινάκη στη γλυκοπατάτα για επιπλέον γεύση.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -691,39 +1105,142 @@
             <h2>Στάδιο 3: Κομματάκια (9-12 μήνες)</h2>
             <p>Κομματιασμένα, μασημένα ή ψιλοκομμένα τρόφιμα. Ενθαρρύνετε την αυτοτροφοδότηση!</p>
 
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h4>🍝 Νουντλς με Ρεβύθια</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 40 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> Σέλινο, ντομάτα, καρότο, ρεβύθια, νουντλς</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε ψευδάργυρο και Β12</p>
+            <!-- Recipe 11: Chickpea Noodles -->
+            <div class="recipe-detail">
+                <h4>🍝 Νουντλς με Ρεβύθια</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 40 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🐟 Μπακαλιάρος με Πατάτα</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μίσχος σέλινο (περίπου 40g)</li>
+                            <li>1 μεσαία ντομάτα (περίπου 130g)</li>
+                            <li>½ μεσαίο καρότο (περίπου 40g)</li>
+                            <li>40g μαγειρεμένα ρεβύθια</li>
+                            <li>50g καλά μαγειρεμένα νουντλς (ανά μερίδα)</li>
+                            <li>50g καλά μαγειρεμένο πουρέ μοσχαριού (ανά μερίδα)</li>
+                        </ul>
                     </div>
-                    <p><strong>Υλικά:</strong> Φιλέτο μπακαλιάρου, πατάτα, ρυζάλευρο</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε ιώδιο</p>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🥣 Πρώτο Μου Μούσλι</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 30 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε τα λαχανικά και ξεφλουδίστε και πλύνετε το καρότο. Κόψτε τη ντομάτα στη μέση και αφαιρέστε τους σπόρους.</li>
+                        <li>Κόψτε τα λαχανικά σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά (εκτός από τα ρεβύθια) στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο και προσθέστε τα μαγειρεμένα ρεβύθια.</li>
+                        <li>Κάντε ανάμειξη 3-5 φορές για 15 δευτερόλεπτα.</li>
+                        <li>Σερβίρετε 1 μερίδα με περίπου 50g μαγειρεμένα νουντλς και 50g πουρέ μοσχαριού.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Ψευδάργυρος & Βιταμίνη Β12</p>
+                        <p><strong>Πηγή:</strong> Σίδηρος, Φώσφορος, Κάλιο</p>
+                        <p><strong>Συμβουλές:</strong> Χρησιμοποιήστε ψάρι ή άλλο κρέας. Για χορτοφαγικό γεύμα σερβίρετε με ζυμαρικά ή ρύζι.</p>
                     </div>
-                    <p><strong>Υλικά:</strong> Μύρτιλα, βρώμη, ροδάκινο, αχλάδι</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε αντιοξειδωτικά</p>
+                </div>
+            </div>
+
+            <!-- Recipe 12: Cod and Potato Mash -->
+            <div class="recipe-detail">
+                <h4>🐟 Μπακαλιάρος με Πατάτα</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 20 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>1 φιλέτο μπακαλιάρου (περίπου 100g)</li>
+                            <li>½ μεσαία πατάτα (περίπου 150g)</li>
+                            <li>100g καλά μαγειρεμένο ρυζόχαρτο (ανά μερίδα)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε και ξεφλουδίστε την πατάτα. Αφαιρέστε τα κόκαλα και το δέρμα από τον μπακαλιάρο.</li>
+                        <li>Κόψτε όλα τα υλικά σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '20 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 20 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο.</li>
+                        <li>Για σάλτσα: κάντε ανάμειξη 2-3 φορές για 5 δευτερόλεπτα. Για μωρά που μασάνε καλά: στραγγίστε λίγο νερό ή χρησιμοποιήστε πιρούνι.</li>
+                        <li>Ελέγξτε προσεκτικά για κόκαλα πριν σερβίρετε με περίπου 100g μαγειρεμένο ρυζόχαρτο.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Ιώδιο</p>
+                        <p><strong>Πηγή:</strong> Σελήνιο & Βιταμίνη Β12</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με ζυμαρικά, ρύζι ή άλλο αμυλούχο τρόφιμο της επιλογής σας.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 13: My First Muesli -->
+            <div class="recipe-detail">
+                <h4>🥣 Πρώτο Μου Μούσλι</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 30 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 10 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 5 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>50g μύρτιλα (ώριμα)</li>
+                            <li>100g βρώμη (ανά μερίδα)</li>
+                            <li>½ μεσαίο ροδάκινο (ώριμο, περίπου 100g)</li>
+                            <li>½ μεσαίο αχλάδι (ώριμο, περίπου 100g)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε όλα τα υλικά, ξεφλουδίστε και αφαιρέστε το κουκούτσι από το ροδάκινο και το αχλάδι.</li>
+                        <li>Κόψτε το ροδάκινο και το αχλάδι σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 10 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο.</li>
+                        <li>Κάντε ανάμειξη 2-3 φορές για 5 δευτερόλεπτα.</li>
+                        <li>Σερβίρετε 1 μερίδα με περίπου 100g βρώμη.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Αντιοξειδωτικά</p>
+                        <p><strong>Συμβουλές:</strong> Αναμείξτε με φυσικό γιαούρτι. Χρησιμοποιήστε άλλα φρούτα της επιλογής σας.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -738,39 +1255,140 @@
                 <p>Χρησιμοποιήστε τη <strong>γροθιά του μωρού</strong> ως οδηγό - το στομάχι του είναι περίπου το ίδιο μέγεθος!</p>
             </div>
 
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h4>🌶️ Ρύζι με Σάλτσα Πιπεριάς</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 20 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
-                    </div>
-                    <p><strong>Υλικά:</strong> Πράσο, κολοκυθάκι, κόκκινη πιπεριά, ντομάτα</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Βιταμίνη C</p>
+            <!-- Recipe 14: Rice with Sweet Pepper Sauce -->
+            <div class="recipe-detail">
+                <h4>🌶️ Ρύζι με Σάλτσα Πιπεριάς</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 20 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🍝 Ζυμαρικά Σολομού-Μπρόκολο</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 35 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
-                        <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>½ μίσχος πράσο (περίπου 20g)</li>
+                            <li>¼ μικρό κολοκυθάκι (περίπου 40g)</li>
+                            <li>½ μεσαία κόκκινη πιπεριά (περίπου 40g)</li>
+                            <li>1 μεσαία ντομάτα (περίπου 140g)</li>
+                            <li>140g καλά μαγειρεμένο ρύζι (ανά μερίδα)</li>
+                        </ul>
                     </div>
-                    <p><strong>Υλικά:</strong> Σολομός, μπρόκολο, ζυμαρικά</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε Ωμέγα-3 και Σελήνιο</p>
                 </div>
 
-                <div class="recipe-card">
-                    <h4>🌱 Σπαράγγια με Παρμεζάνα</h4>
-                    <div class="recipe-meta">
-                        <span class="recipe-badge badge-time">⏱️ 30 λεπτά</span>
-                        <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
-                        <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε τα λαχανικά και κόψτε τη ντομάτα και την κόκκινη πιπεριά στη μέση. Αφαιρέστε τους σπόρους.</li>
+                        <li>Κόψτε τα λαχανικά σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο.</li>
+                        <li>Κάντε ανάμειξη 2-3 φορές για 15 δευτερόλεπτα. Για μεγαλύτερα παιδιά, αφήστε πιο κομματιασμένο για να ενθαρρύνετε το μάσημα.</li>
+                        <li>Σερβίρετε 1 μερίδα με περίπου 140g μαγειρεμένο ρύζι.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Βιταμίνη C</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με πουρέ κρέατος ή ψαριού, ή με ζυμαρικά.</p>
                     </div>
-                    <p><strong>Υλικά:</strong> Σπαράγγια, πατάτες, παρμεζάνα</p>
-                    <p><strong>Θρεπτικά:</strong> Πλούσιο σε φωσφόρο και φολικό οξύ</p>
+                </div>
+            </div>
+
+            <!-- Recipe 15: Salmon and Broccoli Pasta -->
+            <div class="recipe-detail">
+                <h4>🍝 Ζυμαρικά Σολομού-Μπρόκολο</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 35 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 4 μερίδες</span>
+                    <span class="recipe-badge badge-freezable">❄️ Κατάψυξη</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>1 φιλέτο σολομού (περίπου 120g)</li>
+                            <li>½ μικρό μπρόκολο (περίπου 120g)</li>
+                            <li>140g καλά μαγειρεμένα ζυμαρικά (ανά μερίδα)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε το μπρόκολο και αφαιρέστε τα κόκαλα και το δέρμα από τον σολομό.</li>
+                        <li>Κόψτε το μπρόκολο και τον σολομό σε κυβάκια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο.</li>
+                        <li>Για σάλτσα: κάντε ανάμειξη 2-3 φορές για 5 δευτερόλεπτα. Για μωρά που μασάνε καλά: στραγγίστε λίγο νερό ή χρησιμοποιήστε πιρούνι.</li>
+                        <li>Σερβίρετε 1 μερίδα με περίπου 140g μαγειρεμένα ζυμαρικά.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Ωμέγα-3, Σελήνιο, Ιώδιο, Βιταμίνη Β12, Θειαμίνη, Βιταμίνη D & K</p>
+                        <p><strong>Πηγή:</strong> Φώσφορος, Ριβοφλαβίνη, Νιασίνη, Φολικό Οξύ & Βιταμίνη C</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με πουρέ λαχανικών ή ζυμαρικά, ρύζι.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe 16: Steamed Asparagus -->
+            <div class="recipe-detail">
+                <h4>🌱 Σπαράγγια με Παρμεζάνα</h4>
+                <div class="recipe-meta">
+                    <span class="recipe-badge badge-time">⏱️ Σύνολο: 30 λεπτά</span>
+                    <span class="recipe-badge badge-time">🔥 Ατμός: 15 λεπτά</span>
+                    <span class="recipe-badge badge-portions">🍽️ 3 μερίδες</span>
+                    <span class="recipe-badge badge-vegetarian">🌱 Χορτοφαγικό</span>
+                </div>
+
+                <div class="ingredients-section">
+                    <h5>📝 Υλικά</h5>
+                    <div class="ingredients-list">
+                        <ul>
+                            <li>12 μίσχοι σπαράγγια (πράσινα, περίπου 240g)</li>
+                            <li>100g μαγειρεμένες νέες πατάτες σε σφήνες (ανά μερίδα)</li>
+                            <li>20g τριμμένη παρμεζάνα (ανά μερίδα)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="instructions-section">
+                    <h5>👨‍🍳 Οδηγίες Παρασκευής</h5>
+                    <ol class="instructions-list">
+                        <li>Πλύνετε τα σπαράγγια και αφαιρέστε τους σκληρούς μίσχους.</li>
+                        <li>Κόψτε τα υλικά σε κομμάτια περίπου 1 cm.</li>
+                        <li>Βάλτε όλα τα υλικά στο δοχείο και κλειδώστε το καπάκι.</li>
+                        <li>Γεμίστε το δοχείο νερού μέχρι το επίπεδο '10/15 min'.</li>
+                        <li>Ρυθμίστε τον χρόνο ατμού στα 15 λεπτά.</li>
+                        <li>Μετά το τέλος, αναποδογυρίστε το δοχείο.</li>
+                        <li>Μεταφέρετε σε μπολ και αφήστε να κρυώσει.</li>
+                        <li>Σερβίρετε 1 μερίδα με 100g μαγειρεμένες πατάτες σε σφήνες και 20g τριμμένη παρμεζάνα.</li>
+                    </ol>
+                </div>
+
+                <div class="nutrition-section">
+                    <h5>💚 Θρεπτικές Πληροφορίες</h5>
+                    <div class="info-box" style="margin: 0;">
+                        <p><strong>Υψηλή περιεκτικότητα:</strong> Φώσφορος, Φολικό Οξύ, Βιταμίνη D & K</p>
+                        <p><strong>Πηγή:</strong> Ασβέστιο, Κάλιο, Θειαμίνη, Βιταμίνη C & Β6</p>
+                        <p><strong>Συμβουλές:</strong> Σερβίρετε με αποφλοιωμένο σολομό ή νουντλς με σάλτσα της επιλογής σας.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -908,17 +1526,6 @@
                 if (link.getAttribute('href') === `#${current}`) {
                     link.classList.add('active');
                 }
-            });
-        });
-
-        // Recipe cards animation on hover
-        const recipeCards = document.querySelectorAll('.recipe-card');
-        recipeCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
-            });
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
             });
         });
     </script>
