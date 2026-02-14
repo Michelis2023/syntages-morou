@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Ολοκληρωμένος οδηγός συνταγών για Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01). Συνταγές για 6+, 7-9, 10-12 μηνών με χρόνους ατμού και οδηγίες ασφάλειας.">
+  
+  <!-- SEO & Performance -->
+  <link rel="canonical" href="https://michelis2023.github.io/syntages-morou/">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="theme-color" content="#2b7a78" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://michelis2023.github.io/syntages-morou/">
   <meta property="og:title" content="Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1">
   <meta property="og:description" content="Ολοκληρωμένος οδηγός συνταγών για το Philips Avent Premium 4-in-1 Steamer Blender με συνταγές ανά ηλικία.">
+  <meta property="og:locale" content="el_GR">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -65,6 +72,7 @@
 
     * {
       box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
@@ -74,6 +82,8 @@
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .page {
@@ -99,6 +109,7 @@
       background: var(--nav-bg);
       border-bottom: 1px solid var(--nav-border);
       backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
 
     .nav-inner {
@@ -173,6 +184,7 @@
       border-radius: 999px;
       transition: background-color 0.15s ease, color 0.15s ease;
       white-space: nowrap;
+      touch-action: manipulation;
     }
 
     .nav-link:hover,
@@ -201,6 +213,7 @@
       justify-content: center;
       padding: 0.25rem;
       cursor: pointer;
+      touch-action: manipulation;
     }
 
     .nav-toggle span {
@@ -300,6 +313,7 @@
       cursor: pointer;
       box-shadow: inset 0 0 0 1px rgba(0,0,0,0.07);
       transition: background-color 0.2s ease;
+      touch-action: manipulation;
     }
 
     .theme-toggle:hover {
@@ -361,6 +375,7 @@
       transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
       z-index: 30;
       transform: translateY(10px);
+      touch-action: manipulation;
     }
 
     .scroll-to-top.visible {
@@ -372,6 +387,10 @@
     .scroll-to-top:hover {
       background: var(--link-hover);
       transform: translateY(-3px);
+    }
+
+    .scroll-to-top:active {
+      transform: translateY(0);
     }
 
     .scroll-to-top:focus-visible {
@@ -573,6 +592,7 @@
     .table-wrapper {
       overflow-x: auto;
       margin-top: 0.35rem;
+      -webkit-overflow-scrolling: touch;
     }
 
     table {
@@ -1504,7 +1524,7 @@
         Βασισμένο σε πληροφορίες για το Philips Avent SCF883/01 και ενδεικτικές συνταγές απογαλακτισμού από επίσημα φυλλάδια της Philips Avent.
       </p>
       <p style="margin-top: 0.5rem; font-size: 0.75rem;">
-        © 2026 Συνταγές Βρεφικής Τροφής Philips Avent • Με αγάπη για υγιή διατροφή
+        © 2026 Συνταγές Βρεφικής Τροφής Philips Avent • Με αγάπη για υγιή διατροφή 🍼
       </p>
     </footer>
   </div>
