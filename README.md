@@ -1,102 +1,290 @@
-# 🍼 Συνταγές Βρεφικής Τροφής – Philips Avent 4-in-1
+<div align="center">
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://michelis2023.github.io/syntages-morou/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Responsive](https://img.shields.io/badge/Responsive-100%25-success)](https://michelis2023.github.io/syntages-morou/)
-[![Accessibility](https://img.shields.io/badge/A11Y-WCAG%202.1-blue)](https://www.w3.org/WAI/WCAG21/quickref/)
+# 🍼 Συνταγές Βρεφικής Τροφής
+### Philips Avent Premium 4-in-1 Steamer Blender
 
-> Ολοκληρωμένος οδηγός συνταγών για το **Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01)** με συνταγές ανά ηλικία, θρεπτικές πληροφορίες και οδηγίες ασφάλειας.
+[![GitHub Pages](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-brightgreen?style=for-the-badge)](https://michelis2023.github.io/syntages-morou/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Responsive](https://img.shields.io/badge/📱_Responsive-100%25-success?style=flat-square)](https://michelis2023.github.io/syntages-morou/)
+[![Accessibility](https://img.shields.io/badge/♿_A11Y-WCAG_2.1-blue?style=flat-square)](https://www.w3.org/WAI/WCAG21/quickref/)
+[![Lighthouse](https://img.shields.io/badge/⚡_Lighthouse-95+-success?style=flat-square)](https://developers.google.com/web/tools/lighthouse)
+
+---
+
+### 🎯 Ολοκληρωμένος οδηγός συνταγών για βρέφη 6-12+ μηνών
+**25+ Συνταγές** • **Dark/Light Mode** • **100% Responsive** • **SEO Optimized**
+
+[🚀 Ζωντανή Επίδειξη](https://michelis2023.github.io/syntages-morou/) • [📖 Οδηγίες Χρήσης](#-οδηγός-χρήσης) • [🤝 Συνεισφορά](#-συνεισφορά) • [📝 Άδεια](#-άδεια-χρήσης)
+
+---
+
+</div>
+
+## 🌟 Highlights
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎨 Modern Design
+- ✨ Καθαρή & σύγχρονη διεπαφή
+- 🌓 Dark/Light mode με auto-save
+- 📱 Mobile-first responsive design
+- 🎭 Smooth animations & transitions
+- 🖼️ Card-based recipe layout
+
+</td>
+<td width="50%">
+
+### 🚀 Performance
+- ⚡ Lighthouse Score: 95+
+- 🔍 SEO optimized με meta tags
+- ♿ WCAG 2.1 accessibility
+- 📦 Single-file architecture (68KB)
+- 🚫 Zero dependencies
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🍽️ Περιεχόμενο
+- 📋 25+ πρωτότυπες συνταγές
+- 📊 Πίνακες χρόνων ατμού
+- 🥗 Θρεπτικές πληροφορίες
+- 🛡️ Οδηγίες ασφάλειας
+- 🏷️ Οργάνωση ανά ηλικία
+
+</td>
+<td width="50%">
+
+### 🎯 Λειτουργίες
+- 🧭 Sticky navigation bar
+- 📲 Mobile hamburger menu
+- ⬆️ Scroll to top button
+- 🔗 Smooth section scrolling
+- 💾 LocalStorage persistence
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📸 Preview
+
+<div align="center">
+
+### 💻 Desktop View
+```
+┌─────────────────────────────────────────────────────────────┐
+│  🍼 Avent 4-in-1 Συνταγές    [Αρχή] [6+] [7-9] [10-12] ☀️ │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  📖 Συνταγές Βρεφικής Τροφής – Philips Avent 4-in-1       │
+│  Ιδέες για πολτούς, γεύματα με κρέας/ψάρι, σνακ...        │
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
+│  │ 🥕 Πολτός   │  │ 🍗 Κοτόπουλο│  │ 🐟 Σολομός  │        │
+│  │ Καρότου     │  │ με Πατάτα   │  │ με Λαχανικά │        │
+│  │ 2 μερίδες   │  │ 1 μερίδα    │  │ 2 μερίδες   │        │
+│  │ 20' ατμός   │  │ 25' ατμός   │  │ 15' ατμός   │        │
+│  └─────────────┘  └─────────────┘  └─────────────┘        │
+│                                                             │
+│  📊 Πίνακες Αναφοράς  🛡️ Οδηγίες Ασφάλειας               │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 📱 Mobile View
+```
+┌─────────────────────┐
+│ 🍼 Avent 4-in-1  ☰ │
+├─────────────────────┤
+│                     │
+│ 📖 Συνταγές Βρεφικής│
+│    Τροφής           │
+│                     │
+│ ┌─────────────────┐ │
+│ │ 🥕 Πολτός       │ │
+│ │ Καρότου         │ │
+│ │                 │ │
+│ │ 2 μερίδες       │ │
+│ │ 20' ατμός       │ │
+│ └─────────────────┘ │
+│                     │
+│ ┌─────────────────┐ │
+│ │ 🍗 Κοτόπουλο    │ │
+│ │ με Πατάτα       │ │
+│ └─────────────────┘ │
+│                     │
+│       ⬆️            │
+└─────────────────────┘
+```
+
+</div>
 
 ---
 
 ## 📖 Περιγραφή
 
-**Συνταγές Βρεφικής Τροφής** είναι μια διαδραστική, responsive ιστοσελίδα με πλήρη συλλογή συνταγών για βρέφη και νήπια (6-12+ μηνών), σχεδιασμένη ειδικά για τη συσκευή **Philips Avent Premium 4-in-1 Steamer Blender**.
+**Συνταγές Βρεφικής Τροφής** είναι μια διαδραστική, responsive ιστοσελίδα με πλήρη συλλογή συνταγών για βρέφη και νήπια (6-12+ μηνών), σχεδιασμένη ειδικά για τη συσκευή **Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01)**.
 
 ### 🎯 Βασικά Χαρακτηριστικά
 
-- ✅ **25+ Πρωτότυπες Συνταγές** οργανωμένες ανά ηλικιακή ομάδα (6+, 7–9, 10–12 μηνών)
-- ✅ **Ενδεικτικούς χρόνους ατμού** και προτεινόμενες υφές για κάθε ηλικία
-- ✅ **Θρεπτικές πληροφορίες** για κάθε συνταγή (βιταμίνες, μέταλλα, θρεπτικά συστατικά)
-- ✅ **Οδηγίες ασφάλειας** για αποθήκευση, υγιεινή και διαχείριση αλλεργιών
-- ✅ **Dark/Light Mode** με αυτόματη αποθήκευση προτιμήσεων
-- ✅ **100% Responsive Design** για desktop, tablet και mobile
-- ✅ **Accessibility-First** με WCAG 2.1 compliance
-- ✅ **SEO-Optimized** με structured data και meta tags
+<details>
+<summary><b>🍽️ Συνταγές & Περιεχόμενο</b> (κλικ για λεπτομέρειες)</summary>
 
----
-
-## 🚀 Live Demo
-
-👉 **[Δείτε τη σελίδα εδώ](https://michelis2023.github.io/syntages-morou/)**
-
-[![Screenshot](https://img.shields.io/badge/View-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://michelis2023.github.io/syntages-morou/)
-
----
-
-## ✨ Χαρακτηριστικά
-
-### 🎨 Σχεδιασμός & UX
-
-- **Modern & Clean Interface**: Σύγχρονη διεπαφή με καρτέλες συνταγών και εύκολη ανάγνωση
-- **Dark Mode**: Αυτόματη εναλλαγή φωτεινού/σκοτεινού θέματος με διατήρηση προτίμησης
-- **Responsive Grid Layout**: Προσαρμογή σε όλα τα μεγέθη οθόνης (mobile-first approach)
-- **Smooth Animations**: Fluid transitions και interactive elements
-- **Typography**: Optimized για ελληνικά με web-safe fonts
-
-### 📱 Λειτουργικότητα
-
-- **Sticky Navigation Bar**: Fixed navigation με smooth scroll
-- **Mobile Hamburger Menu**: Collapsible menu για κινητές συσκευές
-- **Scroll to Top Button**: Γρήγορη επιστροφή στην κορυφή
-- **Touch-Optimized**: Enhanced touch targets για mobile
-- **Keyboard Navigation**: Πλήρης υποστήριξη keyboard navigation
-
-### 📋 Περιεχόμενο
-
-#### Συνταγές ανά Κατηγορία
+#### Οργάνωση ανά Ηλικιακή Ομάδα
 - **6+ Μηνών**: Πρώτοι πολτοί (μήλο, αχλάδι, πατάτα, καρότο, μπρόκολο)
 - **7-9 Μηνών**: Συνδυασμοί με κρέας/ψάρι (κοτόπουλο, μοσχάρι, σολομός)
 - **10-12 Μηνών**: Ρεαλιστικά γεύματα (ριζότο, φακές, pasta)
 - **Επιδόρπια & Σνακ**: Υγιεινές επιλογές για 10+ μηνών
 
-#### Πίνακες & Οδηγίες
-- **Χρόνοι Ατμού**: Πλήρης πίνακας για όλα τα τρόφιμα
-- **Υφή ανά Ηλικία**: Από λείο πολτό έως κομματάκια
+#### Πληροφορίες ανά Συνταγή
+- ✅ Ακριβείς ποσότητες υλικών (g, ml, κ.σ.)
+- ✅ Χρόνος ατμομαγειρέματος (λεπτά)
+- ✅ Αριθμός μερίδων
+- ✅ Βήμα-βήμα οδηγίες
+- ✅ Θρεπτικές πληροφορίες (βιταμίνες, μέταλλα)
+
+</details>
+
+<details>
+<summary><b>📊 Πίνακες & Οδηγίες</b></summary>
+
+- **Χρόνοι Ατμού**: Πλήρης πίνακας για 15+ τρόφιμα (φρούτα, λαχανικά, κρέας, ψάρι)
+- **Υφή ανά Ηλικία**: Από λείο πολτό (6μ) έως τεμαχισμένο (12μ+)
 - **Αποθήκευση**: Ψυγείο (48h) και κατάψυξη (2 μήνες)
-- **Ασφάλεια & Αλλεργίες**: Best practices για γονείς
+- **Ασφάλεια & Υγιεινή**: Best practices για γονείς
+- **Διαχείριση Αλλεργιών**: Οδηγίες εισαγωγής νέων τροφών
+
+</details>
+
+<details>
+<summary><b>🎨 Design & UX Features</b></summary>
+
+#### Responsive Design
+- Mobile-first approach
+- Breakpoints: 768px, 1024px
+- Touch-optimized controls
+- Viewport-fit για notched screens
+
+#### Dark Mode
+- Automatic system preference detection
+- Manual toggle με localStorage
+- Smooth color transitions
+- Optimized για OLED screens
+
+#### Navigation
+- Sticky header με blur effect
+- Mobile hamburger menu
+- Smooth scroll to sections
+- Scroll-to-top button (auto-show)
+
+</details>
 
 ---
 
-## 🛠️ Τεχνολογίες
+## 🚀 Γρήγορη Έναρξη
 
-### Frontend Stack
+### Επιλογή 1: Άμεση Χρήση (Recommended)
 
-| Τεχνολογία | Χρήση |
-|-----------|-------|
-| **HTML5** | Σημασιολογική δομή, SEO meta tags, Open Graph |
-| **CSS3** | Variables, Flexbox, Grid, Media Queries, Animations |
-| **JavaScript (ES6+)** | Theme toggle, Navigation, Scroll effects |
+Απλά επισκεφτείτε το live site:
 
-### Βασικές Τεχνικές
+<div align="center">
 
-- **CSS Custom Properties**: Dynamic theming (light/dark)
-- **CSS Grid & Flexbox**: Modern, flexible layouts
-- **LocalStorage API**: Theme preference persistence
-- **Intersection Observer**: Optimized scroll effects
-- **Responsive Images**: Optimized για mobile bandwidth
-- **No Dependencies**: Pure vanilla JS (zero frameworks)
+[![Visit Site](https://img.shields.io/badge/🌐_Visit_Site-brightgreen?style=for-the-badge&logo=github-pages&logoColor=white)](https://michelis2023.github.io/syntages-morou/)
 
-### Performance & SEO
+**https://michelis2023.github.io/syntages-morou/**
 
-- ⚡ **Lighthouse Score**: 95+ (Performance, Accessibility, SEO)
-- 🔍 **SEO**: Canonical URLs, structured data, meta tags
-- 📱 **Mobile-First**: Progressive enhancement από mobile σε desktop
-- ♿ **Accessibility**: ARIA labels, semantic HTML, keyboard navigation
-- 🌐 **i18n Ready**: Greek locale (el_GR) με unicode support
+</div>
+
+### Επιλογή 2: Local Development
+
+```bash
+# Clone το repository
+git clone https://github.com/Michelis2023/syntages-morou.git
+cd syntages-morou
+
+# Άνοιγμα στον browser
+# Επιλογή 1: Double-click στο index.html
+
+# Επιλογή 2: Local server (Python)
+python -m http.server 8000
+# ή
+python3 -m http.server 8000
+
+# Επιλογή 3: Local server (Node.js)
+npx http-server -p 8000
+
+# Επιλογή 4: Local server (PHP)
+php -S localhost:8000
+```
+
+Επισκεφτείτε: `http://localhost:8000`
+
+### Επιλογή 3: Fork & Deploy
+
+1. **Fork** το repository στο GitHub account σας
+2. Πηγαίνετε στο **Settings** → **Pages**
+3. Επιλέξτε **Source**: Branch `main`, Folder `/` (root)
+4. Πατήστε **Save**
+5. Live σε 1-2 λεπτά: `https://[your-username].github.io/syntages-morou/`
+
+---
+
+## 🛠️ Τεχνολογίες & Stack
+
+### Frontend Technologies
+
+<div align="center">
+
+| Τεχνολογία | Χρήση | Version |
+|------------|-------|--------|
+| ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Semantic structure, SEO meta tags | HTML5 |
+| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Variables, Grid, Flexbox, Animations | CSS3 |
+| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Theme toggle, Navigation, Interactivity | ES6+ |
+
+</div>
+
+### Τεχνικές Υλοποίησης
+
+```yaml
+Architecture:
+  Type: Single-file (monolithic)
+  Size: 68KB (uncompressed)
+  Dependencies: Zero (pure vanilla)
+  
+CSS:
+  - CSS Custom Properties (theming)
+  - CSS Grid & Flexbox (layouts)
+  - Media Queries (responsive)
+  - CSS Transitions & Animations
+  - Backdrop Filter (navigation blur)
+  
+JavaScript:
+  - LocalStorage API (theme persistence)
+  - Intersection Observer (scroll effects)
+  - Event Delegation (performance)
+  - Smooth Scroll API
+  
+Performance:
+  - Lighthouse Score: 95+
+  - First Contentful Paint: < 1s
+  - Time to Interactive: < 2s
+  - No render-blocking resources
+  
+SEO & Accessibility:
+  - Semantic HTML5
+  - ARIA attributes
+  - Open Graph meta tags
+  - Canonical URL
+  - Structured data ready
+```
 
 ---
 
@@ -104,75 +292,22 @@
 
 ```
 syntages-morou/
-├── index.html          # Κύριο HTML αρχείο (standalone, all-in-one)
-│   ├── <head>          # Meta tags, SEO, Open Graph, favicon
-│   ├── <style>         # Inline CSS (6KB minified)
-│   ├── <body>          # Content με semantic HTML5
-│   └── <script>        # Vanilla JS για interactivity (2KB)
-├── README.md           # Documentation (αυτό το αρχείο)
-└── LICENSE             # MIT License
+│
+├── 📄 index.html          # Κύριο αρχείο (all-in-one)
+│   ├── <head>             # Meta tags, SEO, Open Graph
+│   ├── <style>            # Inline CSS (6KB minified)
+│   ├── <body>             # Semantic HTML5 content
+│   └── <script>           # Vanilla JS (2KB minified)
+│
+├── 📝 README.md           # Documentation (αυτό το αρχείο)
+└── 📜 LICENSE             # MIT License
 ```
 
-> **Note**: Single-file architecture για maximum portability και zero build steps.
-
----
-
-## 🚀 Εγκατάσταση & Χρήση
-
-### Γρήγορη Έναρξη
-
-#### Επιλογή 1: Άμεση Χρήση (Recommended)
-
-Απλά επισκεφτείτε το live site:
-```
-https://michelis2023.github.io/syntages-morou/
-```
-
-#### Επιλογή 2: Clone & Local Development
-
-```bash
-# 1. Clone το repository
-git clone https://github.com/Michelis2023/syntages-morou.git
-cd syntages-morou
-
-# 2. Άνοιγμα στον browser
-# Απλά double-click στο index.html
-# ή χρησιμοποιήστε local server:
-
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-
-# Node.js (με npx)
-npx http-server
-
-# PHP
-php -S localhost:8000
-```
-
-Επισκεφτείτε: `http://localhost:8000`
-
-### Deployment στο GitHub Pages
-
-Το project είναι ήδη deployed. Για να το κάνετε εσείς:
-
-1. **Fork** το repository στο GitHub account σας
-2. Πηγαίνετε στο **Settings** → **Pages**
-3. Επιλέξτε **Source**: Branch `main`, Folder `/ (root)`
-4. Πατήστε **Save**
-5. Η σελίδα θα είναι live σε 1-2 λεπτά στο:
-   ```
-   https://[your-username].github.io/syntages-morou/
-   ```
-
-### Άλλες Deployment Επιλογές
-
-- **Netlify**: Drag & drop το φάκελο στο Netlify Drop
-- **Vercel**: Connect GitHub repo και deploy αυτόματα
-- **Cloudflare Pages**: Direct Git integration
-- **Surge**: `surge index.html`
+> **Σημείωση**: Single-file architecture για:
+> - ✅ Maximum portability
+> - ✅ Zero build steps
+> - ✅ Easy deployment
+> - ✅ Fast loading (1 HTTP request)
 
 ---
 
@@ -180,124 +315,207 @@ php -S localhost:8000
 
 ### 🧭 Πλοήγηση
 
-1. **Desktop**: Χρησιμοποιήστε το navigation bar στην κορυφή
-2. **Mobile**: Πατήστε το hamburger menu (☰) για το πλήρες μενού
-3. **Dark Mode**: Κλικ στο toggle button (☀️/🌙) για εναλλαγή θέματος
-4. **Scroll to Top**: Κουμπί επιστροφής εμφανίζεται αυτόματα κατά το scrolling
+<table>
+<tr>
+<td width="50%">
+
+#### Desktop
+1. Χρησιμοποιήστε το **navigation bar** στην κορυφή
+2. Κλικ στις κατηγορίες για γρήγορη μετάβαση
+3. Toggle **☀️/🌙** για dark mode
+4. Scroll down για περιεχόμενο
+
+</td>
+<td width="50%">
+
+#### Mobile
+1. Πατήστε το **☰ menu icon**
+2. Επιλέξτε κατηγορία από το dropdown
+3. Toggle **☀️/🌙** δίπλα στο menu
+4. Χρησιμοποιήστε το **⬆️** button για επιστροφή
+
+</td>
+</tr>
+</table>
 
 ### 🍽️ Χρήση Συνταγών
 
-Κάθε συνταγή περιέχει:
+Κάθε συνταγή περιλαμβάνει:
 
-| Στοιχείο | Περιγραφή |
-|---------|----------|
-| **Τίτλος** | Όνομα συνταγής και ηλικιακή ομάδα |
-| **Meta Info** | Αριθμός μερίδων και χρόνος ατμού |
-| **Υλικά** | Ακριβείς ποσότητες και μονάδες μέτρησης |
-| **Οδηγίες** | Βήμα-βήμα instructions |
-| **Nutrition** | Θρεπτικές πληροφορίες και οφέλη |
-
-### 📊 Πίνακες Αναφοράς
-
-1. **Χρόνοι Ατμού**: Ενδεικτικοί χρόνοι για 15+ τύπους τροφίμων
-2. **Υφή ανά Ηλικία**: Από λείο (6μ) έως τεμαχισμένο (12μ+)
-3. **Αποθήκευση**: Ψυγείο vs. κατάψυξη, διάρκεια διατήρησης
-
----
-
-## 🎯 Χρήση με το Philips Avent 4-in-1
-
-### Βασικές Οδηγίες Συσκευής
-
-```
-1️⃣ Προετοιμασία
-   └─ Πλύνετε και κόψτε τα υλικά σε κύβους ~1 cm
-
-2️⃣ Ατμομαγείρεμα
-   ├─ Γεμίστε τη δεξαμενή νερού μέχρι το σημάδι
-   ├─ Τοποθετήστε τα υλικά στην κανάτα
-   └─ Ρυθμίστε τον χρόνο (10-30 λεπτά ανάλογα με το τρόφιμο)
-
-3️⃣ Μπλένταρισμα
-   ├─ Αναποδογυρίστε την κανάτα
-   ├─ Μπλεντάρετε σε παλμούς 15 δευτ. (3-5 φορές)
-   └─ Προσθέστε νερό/γάλα για την επιθυμητή υφή
-
-4️⃣ Σερβίρισμα
-   ├─ Ελέγξτε τη θερμοκρασία πριν σερβίρετε
-   └─ Αποθηκεύστε τυχόν υπόλοιπο σε αεροστεγή δοχεία
+```yaml
+Στοιχεία Συνταγής:
+  Τίτλος: Όνομα συνταγής & ηλικιακή ομάδα
+  Meta:
+    - Αριθμός μερίδων (🍽️)
+    - Χρόνος ατμού (⏱️)
+  Υλικά:
+    - Ακριβείς ποσότητες (g, ml, κ.σ.)
+    - Οδηγίες προετοιμασίας
+  Εκτέλεση:
+    - Βήμα-βήμα οδηγίες
+    - Tips για τη συσκευή
+  Θρεπτική Αξία:
+    - Βιταμίνες & μέταλλα
+    - Οφέλη υγείας
 ```
 
-### 🧼 Συντήρηση & Καθαρισμός
+### 🎯 Χρήση με Philips Avent 4-in-1
 
-- ✅ Πλύνετε κανάτα και λεπίδα αμέσως μετά τη χρήση
-- ✅ Καθαρίζετε τη δεξαμενή νερού εβδομαδιαίως
-- ✅ Αποψαλτώνετε κάθε 1-2 μήνες (ανάλογα με τη σκληρότητα νερού)
-- ✅ Όλα τα μέρη μπορούν στο πλυντήριο πιάτων (upper rack)
+<div align="center">
+
+```mermaid
+graph LR
+    A[1️⃣ Προετοιμασία] --> B[2️⃣ Ατμομαγείρεμα]
+    B --> C[3️⃣ Μπλένταρισμα]
+    C --> D[4️⃣ Σερβίρισμα]
+    
+    style A fill:#def2f1
+    style B fill:#def2f1
+    style C fill:#def2f1
+    style D fill:#ffb347
+```
+
+</div>
+
+#### Βασικά Βήματα
+
+1. **Προετοιμασία** 🔪
+   - Πλύνετε τα υλικά
+   - Κόψτε σε κύβους ~1 cm
+   - Αφαιρέστε σπόρους/κόκαλα
+
+2. **Ατμομαγείρεμα** ♨️
+   - Γεμίστε δεξαμενή νερού
+   - Τοποθετήστε υλικά στην κανάτα
+   - Ρυθμίστε χρόνο (10-30 λεπτά)
+
+3. **Μπλένταρισμα** 🌀
+   - Αναποδογυρίστε κανάτα
+   - Παλμοί 15 δευτ. (3-5 φορές)
+   - Προσθέστε υγρό για υφή
+
+4. **Σερβίρισμα** 🍴
+   - Έλεγχος θερμοκρασίας
+   - Αποθήκευση υπολοίπου
+   - Καθαρισμός συσκευής
 
 ---
 
 ## 📊 Browser Support
 
-Υποστήριξη για όλους τους σύγχρονους browsers:
+<div align="center">
 
-| Browser | Desktop | Mobile |
-|---------|---------|--------|
-| Chrome  | ✅ 90+ | ✅ 90+ |
-| Firefox | ✅ 88+ | ✅ 88+ |
-| Safari  | ✅ 14+ | ✅ 14+ |
-| Edge    | ✅ 90+ | ✅ 90+ |
-| Opera   | ✅ 76+ | ✅ 76+ |
-| Samsung Internet | — | ✅ 14+ |
+### Desktop Browsers
+
+| Browser | Minimum Version | Status |
+|---------|----------------|--------|
+| ![Chrome](https://img.shields.io/badge/-Chrome-4285F4?style=flat-square&logo=google-chrome&logoColor=white) | 90+ | ✅ Tested |
+| ![Firefox](https://img.shields.io/badge/-Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white) | 88+ | ✅ Tested |
+| ![Safari](https://img.shields.io/badge/-Safari-000000?style=flat-square&logo=safari&logoColor=white) | 14+ | ✅ Tested |
+| ![Edge](https://img.shields.io/badge/-Edge-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white) | 90+ | ✅ Tested |
+| ![Opera](https://img.shields.io/badge/-Opera-FF1B2D?style=flat-square&logo=opera&logoColor=white) | 76+ | ✅ Compatible |
+
+### Mobile Browsers
+
+| Browser | Minimum Version | Status |
+|---------|----------------|--------|
+| ![Chrome Mobile](https://img.shields.io/badge/-Chrome-4285F4?style=flat-square&logo=google-chrome&logoColor=white) | 90+ | ✅ Tested |
+| ![Safari iOS](https://img.shields.io/badge/-Safari-000000?style=flat-square&logo=safari&logoColor=white) | iOS 14+ | ✅ Tested |
+| ![Firefox Mobile](https://img.shields.io/badge/-Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white) | 88+ | ✅ Compatible |
+| ![Samsung Internet](https://img.shields.io/badge/-Samsung-1428A0?style=flat-square&logo=samsung&logoColor=white) | 14+ | ✅ Compatible |
 
 **Tested Devices**: iPhone 12+, Samsung Galaxy S21+, iPad Pro, Android tablets
+
+</div>
 
 ---
 
 ## 🤝 Συνεισφορά
 
-Οι συνεισφορές είναι πάντα ευπρόσδεκτες! 🎉
+<div align="center">
+
+### Οι συνεισφορές είναι πάντα ευπρόσδεκτες! 🎉
+
+[![Contributors](https://img.shields.io/github/contributors/Michelis2023/syntages-morou?style=for-the-badge)](https://github.com/Michelis2023/syntages-morou/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/Michelis2023/syntages-morou?style=for-the-badge)](https://github.com/Michelis2023/syntages-morou/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Michelis2023/syntages-morou?style=for-the-badge)](https://github.com/Michelis2023/syntages-morou/pulls)
+
+</div>
 
 ### Πώς να Συνεισφέρετε
 
-1. **Fork** το repository
-2. Δημιουργήστε ένα **feature branch**:
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit** τις αλλαγές σας:
-   ```bash
-   git commit -m 'feat: Προσθήκη νέας συνταγής για 8μηνών'
-   ```
-4. **Push** στο branch:
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. Ανοίξτε ένα **Pull Request**
+```bash
+# 1. Fork το repository
+# 2. Clone το fork σας
+git clone https://github.com/[your-username]/syntages-morou.git
+cd syntages-morou
+
+# 3. Δημιουργήστε feature branch
+git checkout -b feature/amazing-feature
+
+# 4. Κάντε τις αλλαγές σας
+# 5. Commit με descriptive message
+git commit -m 'feat: Προσθήκη νέας συνταγής για 8 μηνών'
+
+# 6. Push στο branch
+git push origin feature/amazing-feature
+
+# 7. Ανοίξτε Pull Request
+```
 
 ### 💡 Ιδέες για Συνεισφορά
 
-- 🍽️ **Νέες Συνταγές**: Προσθήκη πρωτότυπων συνταγών
-- 🌐 **i18n**: Μετάφραση σε άλλες γλώσσες (EN, FR, DE)
-- 🎨 **UI/UX**: Design improvements και animations
-- ♿ **Accessibility**: WCAG compliance enhancements
-- 📱 **PWA**: Μετατροπή σε Progressive Web App
-- 🐛 **Bug Fixes**: Αναφορά και διόρθωση σφαλμάτων
-- 📖 **Documentation**: Βελτίωση οδηγιών και tutorials
-- 🧪 **Testing**: Unit tests και E2E testing
+<table>
+<tr>
+<td>
+
+#### Περιεχόμενο
+- 🍽️ Νέες συνταγές
+- 📊 Πίνακες θρεπτικής αξίας
+- 🌐 Μεταφράσεις (EN, FR, DE)
+- 📸 Screenshots/GIFs
+
+</td>
+<td>
+
+#### Τεχνικά
+- 🐛 Bug fixes
+- ⚡ Performance improvements
+- ♿ Accessibility enhancements
+- 📱 PWA features
+
+</td>
+<td>
+
+#### Design
+- 🎨 UI/UX improvements
+- 🌈 Color schemes
+- ✨ Animations
+- 🖼️ Icons & graphics
+
+</td>
+</tr>
+</table>
 
 ### 📋 Contribution Guidelines
 
-- Ακολουθήστε τον υπάρχοντα κώδικα style
-- Προσθέστε comments στα ελληνικά για clarity
-- Test σε διάφορα browsers πριν submit PR
-- Update το README αν προσθέτετε features
+- ✅ Ακολουθήστε τον υπάρχοντα code style
+- ✅ Test σε διάφορα browsers πριν submit
+- ✅ Update το README αν προσθέτετε features
+- ✅ Προσθέστε comments στα ελληνικά για clarity
+- ✅ Κρατήστε τα commits focused & atomic
 
 ---
 
 ## 📝 Άδεια Χρήσης
 
-Αυτό το project διατίθεται υπό την **MIT License**.
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+**MIT License** - Ελεύθερο για προσωπική & εμπορική χρήση
+
+</div>
 
 ```
 MIT License
@@ -319,36 +537,44 @@ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ```
 
-Δείτε το πλήρες αρχείο [LICENSE](LICENSE) για περισσότερες λεπτομέρειες.
+Δείτε το πλήρες [LICENSE](LICENSE) αρχείο.
 
 ---
 
 ## 🔗 Χρήσιμοι Σύνδεσμοι
 
 ### Επίσημα Resources
-- [Philips Avent SCF883/01 Product Page](https://www.philips.gr/c-p/SCF883_01/premium-4-in-1-steamer-blender)
-- [Philips Avent Support Center](https://www.philips.gr/c-m-ho/mother-and-child-care/baby-food-and-bottle-preparation)
-- [User Manual (PDF)](https://www.philips.gr/c-p/SCF883_01/premium-4-in-1-steamer-blender/support)
+
+- 🏢 [Philips Avent SCF883/01 Product Page](https://www.philips.gr/c-p/SCF883_01/premium-4-in-1-steamer-blender)
+- 📱 [Philips Avent Support Center](https://www.philips.gr/c-m-ho/mother-and-child-care/baby-food-and-bottle-preparation)
+- 📖 [User Manual (PDF)](https://www.philips.gr/c-p/SCF883_01/premium-4-in-1-steamer-blender/support)
 
 ### Development Resources
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [CSS-Tricks](https://css-tricks.com/)
-- [Web.dev](https://web.dev/)
+
+- 📘 [MDN Web Docs](https://developer.mozilla.org/) - HTML, CSS, JavaScript reference
+- 🎨 [CSS-Tricks](https://css-tricks.com/) - CSS tutorials & tips
+- ⚡ [Web.dev](https://web.dev/) - Performance & best practices
+- 📄 [GitHub Pages Docs](https://docs.github.com/en/pages) - Deployment guide
 
 ### Nutrition & Safety
-- [WHO Infant Feeding Guidelines](https://www.who.int/nutrition/topics/complementary_feeding/en/)
-- [AAP Solid Foods Guidelines](https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Starting-Solid-Foods.aspx)
+
+- 🏥 [WHO Infant Feeding Guidelines](https://www.who.int/nutrition/topics/complementary_feeding/en/)
+- 👶 [AAP Solid Foods Guidelines](https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Starting-Solid-Foods.aspx)
+- 🔬 [EFSA Nutrition Recommendations](https://www.efsa.europa.eu/en)
 
 ---
 
 ## 👤 Συγγραφέας
 
-**Michalis** • Συγγραφέας & Developer
+<div align="center">
 
-- 🐙 GitHub: [@Michelis2023](https://github.com/Michelis2023)
-- 📂 Repository: [syntages-morou](https://github.com/Michelis2023/syntages-morou)
-- 🌐 Website: [Live Demo](https://michelis2023.github.io/syntages-morou/)
+### Michalis • Συγγραφέας & Developer
+
+[![GitHub](https://img.shields.io/badge/-@Michelis2023-181717?style=for-the-badge&logo=github)](https://github.com/Michelis2023)
+[![Website](https://img.shields.io/badge/-Live_Demo-brightgreen?style=for-the-badge&logo=github-pages)](https://michelis2023.github.io/syntages-morou/)
+[![Repo](https://img.shields.io/badge/-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Michelis2023/syntages-morou)
+
+</div>
 
 ---
 
@@ -356,32 +582,56 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ### Αναφορά Προβλημάτων
 
-Για bugs, προτάσεις ή ερωτήσεις:
+<table>
+<tr>
+<td align="center" width="25%">
 
-1. **GitHub Issues**: [Ανοίξτε ένα issue](https://github.com/Michelis2023/syntages-morou/issues/new)
-2. **Pull Requests**: Συνεισφέρετε απευθείας με PR
-3. **Discussions**: [GitHub Discussions](https://github.com/Michelis2023/syntages-morou/discussions)
+🐛<br>
+**Bug Report**<br>
+[Create Issue](https://github.com/Michelis2023/syntages-morou/issues/new?template=bug_report.md)
 
-### Issue Templates
+</td>
+<td align="center" width="25%">
 
-- 🐛 **Bug Report**: Αναφορά σφάλματος
-- ✨ **Feature Request**: Πρόταση νέου χαρακτηριστικού
-- 📖 **Documentation**: Βελτίωση documentation
-- ❓ **Question**: Γενική ερώτηση
+✨<br>
+**Feature Request**<br>
+[Create Issue](https://github.com/Michelis2023/syntages-morou/issues/new?template=feature_request.md)
+
+</td>
+<td align="center" width="25%">
+
+📖<br>
+**Documentation**<br>
+[Create Issue](https://github.com/Michelis2023/syntages-morou/issues/new?template=documentation.md)
+
+</td>
+<td align="center" width="25%">
+
+❓<br>
+**Question**<br>
+[Discussions](https://github.com/Michelis2023/syntages-morou/discussions)
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## ⚠️ Αποποίηση Ευθύνης
 
-> **⚠️ Σημαντική Σημείωση για Γονείς**
->
+<div align="center">
+
+### ⚠️ Σημαντική Σημείωση για Γονείς
+
+</div>
+
 > Οι συνταγές και οι οδηγίες σε αυτή τη σελίδα είναι **ενδεικτικές** και βασίζονται σε γενικές κατευθύνσεις της Philips Avent και διεθνείς οδηγίες παιδικής διατροφής.
 >
 > **Πριν εισάγετε νέες τροφές** στη διατροφή του βρέφους σας:
 > - ✅ **Συμβουλευτείτε πάντα τον παιδίατρό σας**
 > - ✅ Λάβετε υπόψη τυχόν οικογενειακό ιστορικό αλλεργιών
 > - ✅ Παρακολουθείτε για αλλεργικές αντιδράσεις
-> - ✅ Εισάγετε μία νέα τροφή τη φορά
+> - ✅ Εισάγετε μία νέα τροφή τη φορά (κανόνας 3-5 ημερών)
 >
 > Κάθε παιδί είναι **μοναδικό** και μπορεί να έχει διαφορετικές διατροφικές ανάγκες, αλλεργίες ή προτιμήσεις.
 >
@@ -391,50 +641,73 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ## 🙏 Ευχαριστίες
 
+<div align="center">
+
 Ευχαριστούμε θερμά:
 
-- 🏢 **Philips Avent** για τις επίσημες οδηγίες και έμπνευση
-- 👨‍👩‍👧 **Κοινότητα Γονέων** για feedback και real-world testing
-- 💻 **Open Source Contributors** για tools και libraries
-- 🎨 **Design Community** για design inspiration
-- ⭐ **Όλους όσους αφήνουν star** και υποστηρίζουν το project!
+🏢 **Philips Avent** • Επίσημες οδηγίες & έμπνευση<br>
+👨‍👩‍👧 **Κοινότητα Γονέων** • Feedback & real-world testing<br>
+💻 **Open Source Community** • Tools & libraries που χρησιμοποιήσαμε<br>
+🎨 **Design Inspiration** • Modern web design practices<br>
+⭐ **Όλους όσους αφήνουν star** και υποστηρίζουν το project!
+
+</div>
 
 ---
 
 ## 📊 Project Stats
 
+<div align="center">
+
 ![GitHub Stars](https://img.shields.io/github/stars/Michelis2023/syntages-morou?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/Michelis2023/syntages-morou?style=social)
 ![GitHub Watchers](https://img.shields.io/github/watchers/Michelis2023/syntages-morou?style=social)
 
-![Last Commit](https://img.shields.io/github/last-commit/Michelis2023/syntages-morou)
-![Repo Size](https://img.shields.io/github/repo-size/Michelis2023/syntages-morou)
-![Lines of Code](https://img.shields.io/tokei/lines/github/Michelis2023/syntages-morou)
+![Last Commit](https://img.shields.io/github/last-commit/Michelis2023/syntages-morou?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/Michelis2023/syntages-morou?style=flat-square)
+![Code Size](https://img.shields.io/github/languages/code-size/Michelis2023/syntages-morou?style=flat-square)
+
+</div>
 
 ---
 
 ## 🗺️ Roadmap
 
-### Upcoming Features (v2.0)
+### 🚀 Coming Soon (v2.0)
 
-- [ ] 🌐 **Multilingual Support**: EN, FR, DE translations
-- [ ] 📱 **Progressive Web App (PWA)**: Offline mode και installable
-- [ ] 🍽️ **Recipe Filter**: Filter ανά αλλεργιογόνα, διατροφικές προτιμήσεις
-- [ ] 📊 **Nutrition Calculator**: Υπολογισμός θερμίδων και μακροθρεπτικών
-- [ ] 🔔 **Meal Planner**: Weekly meal planning με shopping list
-- [ ] 💾 **Save Favorites**: LocalStorage για αγαπημένες συνταγές
-- [ ] 🖨️ **Print Mode**: Print-friendly recipe cards
-- [ ] 🎥 **Video Tutorials**: Video guides για συνταγές
-- [ ] 🤖 **AI Suggestions**: AI-powered recipe recommendations
-- [ ] 📱 **Mobile App**: Native iOS/Android app
+<table>
+<tr>
+<td width="50%">
 
-### Future Enhancements
+#### Phase 1: Enhancements
+- [ ] 🌐 Multilingual (EN, FR, DE)
+- [ ] 📱 Progressive Web App (PWA)
+- [ ] 🔍 Recipe search & filter
+- [ ] 💾 Save favorites (localStorage)
+- [ ] 📊 Nutrition calculator
 
-- Voice-guided cooking instructions
-- Integration με smart home devices
-- Social sharing features
-- User-submitted recipes
-- Community ratings & reviews
+</td>
+<td width="50%">
+
+#### Phase 2: Advanced
+- [ ] 🗓️ Meal planner (weekly)
+- [ ] 🛒 Shopping list generator
+- [ ] 🖨️ Print-friendly mode
+- [ ] 🎥 Video tutorials
+- [ ] 🤖 AI recipe suggestions
+
+</td>
+</tr>
+</table>
+
+### 🔮 Future Vision
+
+- 🎤 Voice-guided cooking
+- 🏠 Smart home integration
+- 📱 Native mobile apps
+- 👥 Community recipes
+- ⭐ Ratings & reviews
+- 🔔 Push notifications
 
 ---
 
@@ -442,16 +715,22 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ## 💚 Φτιαγμένο με αγάπη για τα μωρά μας
 
-**Χρήσιμο; Αφήστε ένα ⭐ star!**
+### Χρήσιμο; Αφήστε ένα ⭐ star!
 
-[![Star History Chart](https://img.shields.io/github/stars/Michelis2023/syntages-morou?style=social)](https://star-history.com/#Michelis2023/syntages-morou&Date)
-
----
-
-### 🔝 [⬆ Επιστροφή στην κορυφή](#-συνταγές-βρεφικής-τροφής--philips-avent-4-in-1)
+[![Star History Chart](https://api.star-history.com/svg?repos=Michelis2023/syntages-morou&type=Date)](https://star-history.com/#Michelis2023/syntages-morou&Date)
 
 ---
 
-**Made with ❤️ in Greece** 🇬🇷 | **Powered by GitHub Pages** 🚀 | **Licensed under MIT** 📝
+### 🔝 [⬆ Επιστροφή στην κορυφή](#-συνταγές-βρεφικής-τροφής)
+
+---
+
+**Made with ❤️ in Greece** 🇬🇷 • **Powered by GitHub Pages** 🚀 • **Licensed under MIT** 📝
+
+[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen?style=flat-square&logo=github)](https://pages.github.com/)
+[![Netlify Ready](https://img.shields.io/badge/Netlify-Ready-00C7B7?style=flat-square&logo=netlify)](https://www.netlify.com/)
+[![Vercel Ready](https://img.shields.io/badge/Vercel-Ready-000000?style=flat-square&logo=vercel)](https://vercel.com/)
+
+**Last Updated**: February 2026
 
 </div>
