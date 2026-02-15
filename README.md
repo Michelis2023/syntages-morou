@@ -13,8 +13,8 @@
 
 ---
 
-### 🎯 Ολοκληρωμένος οδηγός συνταγών για βρέφη και παιδιά
-**15+ Επίσημες Συνταγές Philips** • **4 Στάδια Ανάπτυξης** • **100% Responsive** • **Zero Dependencies**
+### 🎯 Ολοκληρωμένος οδηγός συνταγών για βρέφη και νήπια
+**30+ Επίσημες Συνταγές Philips** • **6 Ηλικιακές Κατηγορίες** • **100% Responsive** • **Zero Dependencies**
 
 [🚀 Ζωντανή Επίδειξη](https://michelis2023.github.io/syntages-morou/) • [📖 Οδηγίες](#-οδηγός-χρήσης) • [🤝 Συνεισφορά](#-συνεισφορά)
 
@@ -28,22 +28,24 @@
 <tr>
 <td width="50%">
 
-### 🎨 Modern Design
-- ✨ Καθαρή & σύγχρονη διεπαφή
-- 🎨 Gradient backgrounds & cards
+### 🎨 Σύγχρονος Σχεδιασμός
+- ✨ Καθαρή και σύγχρονη διεπαφή
+- 🌓 Dark/Light mode με αποθήκευση προτίμησης
 - 📱 Mobile-first responsive design
-- 🎭 Smooth transitions
+- 🎭 Ομαλές μεταβάσεις και animations
 - 🖼️ Card-based recipe layout
+- 🧭 Sticky navigation με burger menu
 
 </td>
 <td width="50%">
 
-### 🚀 Performance
-- ⚡ Single-file architecture (~13KB)
-- 🚫 Zero dependencies (pure vanilla)
-- 📦 Lightweight & fast loading
+### 🚀 Απόδοση
+- ⚡ Single-file architecture (~62KB)
+- 🚫 Μηδενικές εξαρτήσεις (καθαρή vanilla)
+- 📦 Ελαφρύ και γρήγορο φόρτωμα
 - 🔍 SEO optimized
-- ♿ Accessible design
+- ♿ Προσβάσιμος σχεδιασμός
+- 💾 LocalStorage για θέμα
 
 </td>
 </tr>
@@ -51,21 +53,23 @@
 <td width="50%">
 
 ### 🍽️ Περιεχόμενο
-- 📋 15+ επίσημες συνταγές Philips
-- 📊 4 στάδια ανάπτυξης (4-12+μ)
+- 📋 30+ επίσημες συνταγές Philips
+- 📊 6 ηλικιακές κατηγορίες (6μ-18μ+)
 - 🥗 Θρεπτικές πληροφορίες
-- 🛡️ Οδηγίες ασφάλειας
+- 🛡️ Οδηγίες ασφάλειας και αποθήκευσης
+- 📅 Πρόγραμμα διατροφής 3 ημερών
 - 🔗 Επίσημες πηγές Philips
 
 </td>
 <td width="50%">
 
 ### 🎯 Λειτουργίες
-- 🧭 Sticky navigation bar
-- 📲 5 κουμπιά πλοήγησης
+- 🧭 Sticky navigation με αυτόματο κλείσιμο
+- 📲 8 κουμπιά πλοήγησης
 - 🎨 Smooth section scrolling
-- 💾 Professional styling
-- 📖 Πλήρης οδηγός απογαλακτισμού
+- 💾 Επαγγελματικό styling
+- 📖 Πλήρης οδηγός απογαλάκτισης
+- 👨‍🍳 Οδηγίες μαγειρικής με παιδιά
 
 </td>
 </tr>
@@ -75,72 +79,118 @@
 
 ## 📖 Περιγραφή
 
-**Συνταγές για Μωρά Philips Avent** είναι μια διαδραστική, responsive ιστοσελίδα με επίσημες συνταγές από τη Philips Avent για βρέφη και παιδιά, οργανωμένες σε **4 στάδια ανάπτυξης**.
+**Συνταγές για Μωρά Philips Avent** είναι μια διαδραστική, responsive ιστοσελίδα με επίσημες συνταγές από τη Philips Avent για βρέφη και νήπια, οργανωμένες σε **6 ηλικιακές κατηγορίες** με δυνατότητα εναλλαγής φωτεινού/σκούρου θέματος.
 
-### 🎯 Στάδια Ανάπτυξης
+### 🎯 Ηλικιακές Κατηγορίες
 
 <details>
-<summary><b>👶 Στάδιο 1: Πρώτες Γεύσεις (4-6 μήνες)</b></summary>
+<summary><b>👶 6+ Μηνών: Πρώτες Γεύσεις</b></summary>
 
-#### Απαλοί πουρέδες για εξερεύνηση γεύσεων
-- **Πουρές Μήλου** - Απλός και γλυκός πρώτος πολτός
-- **Καρότο και Γλυκοπατάτα** - Πλούσιο σε βιταμίνη A
-- **Πατάτα και Μπρόκολο** - Πηγή βιταμίνης K
-- **Μήλο και Αχλάδι** - Ιδανικό για πρωινό
+#### Απαλοί πολτοί για εξερεύνηση γεύσεων
+- **Πολτός Μήλου & Αχλαδιού** - Απλός και γλυκός πρώτος πολτός
+- **Πολτός Γλυκοπατάτας** - Πλούσιος σε βιταμίνη A
+- **Πολτός Καρότου** - Πηγή βιταμίνης A και αντιοξειδωτικών
+- **Πολτός Μπρόκολου** - Πλούσιος σε φυλλικό οξύ και βιταμίνη C
+- **Πολτός Κολοκύθας Butternut** - Ιδανικός για πρωινό
+- **Πολτός Μπανάνας & Αβοκάντο** - Χωρίς μαγείρεμα, πλούσιος σε θρεπτικά
 
 **Χαρακτηριστικά:**
-- ⏱️ Χρόνος προετοιμασίας: 25-35 λεπτά
-- 🍽️ Μερίδες: 4-6 ανά συνταγή
+- ⏱️ Χρόνος ατμού: 8-25 λεπτά
+- 🍽️ Μερίδες: 1-4 ανά συνταγή
 - ❄️ Δυνατότητα κατάψυξης
-- 🥄 Υφή: Λείοι πουρέδες
+- 🥄 Υφή: Λείοι, αρκετά αραιοί πολτοί
 
 </details>
 
 <details>
-<summary><b>👶 Στάδιο 2: Μαλακά Μασήματα (6-8 μήνες)</b></summary>
+<summary><b>👶 7-9 Μηνών: Χοντροί Πολτοί με Πρωτεΐνες</b></summary>
 
-#### Πιο πυκνοί πουρέδες με πρωτεΐνες
-- **Πουρές Κοτόπουλου** - Πρώτη πρωτεΐνη
-- **Σολομός με Γλυκοπατάτα** - Πλούσιο σε Ωμέγα-3
-- **Φακές με Λαχανικά** - Χορτοφαγική επιλογή
-- **Κοτόπουλο με Ντομάτα** - Πλήρες γεύμα
+#### Πιο πυκνοί πολτοί με κρέας, ψάρι και όσπρια
+- **Κοτόπουλο με Γλυκοπατάτα & Καρότο** - Πρώτη πρωτεΐνη
+- **Μοσχάρι με Πατάτα & Μπιζέλι** - Πλούσιο σε σίδηρο
+- **Λευκό Ψάρι με Λαχανικά** - Πλούσιο σε Ωμέγα-3
+- **Φακές με Γλυκοπατάτα** - Χορτοφαγική επιλογή
+- **Επιδόρπιο Ροδάκινο & Δαμάσκηνο** - Με γιαούρτι
+- **Κοτόπουλο με Πατάτα & Μήλο** - Πλήρες γεύμα
 
 **Χαρακτηριστικά:**
 - 🥩 Εισαγωγή κρέατος και ψαριού
 - 🌱 Χορτοφαγικές επιλογές με όσπρια
 - 💪 Υψηλή θρεπτική αξία
-- 🍽️ Πιο πυκνή υφή
+- 🍽️ Χοντρός πολτός με πολύ μικρά κομματάκια
 
 </details>
 
 <details>
-<summary><b>👶 Στάδιο 3: Πιο Χοντρά Μασήματα (9-12 μήνες)</b></summary>
+<summary><b>👶 10-12 Μηνών: Τροφές με Μαλακά Κομμάτια</b></summary>
 
-#### Τροφές με μαλακά κομμάτια
-- **Ζυμαρικά με Μπολονέζ** - Κλασική παιδική επιλογή
-- **Ρύζι με Σάλτσα Πιπεριάς** - Πολύχρωμο γεύμα
+#### Χοντροκομμένο με ορατά κομμάτια και μαλακές τροφές
+- **Ριζότο με Κοτόπουλο & Λαχανικά** - Πλήρες γεύμα με ρύζι
+- **Σολομός με Πατάτα & Μπρόκολο** - Πλούσιο σε Ωμέγα-3
+- **Ζυμαρικά με Σάλτσα Μπολονέζ** - Κλασική παιδική επιλογή (10 μερίδες)
+- **Πίτα Λαχανικών με Τυρί** - Με αυγό και τυρί
 
 **Χαρακτηριστικά:**
 - 🍝 Εισαγωγή ζυμαρικών και ρυζιού
 - 🥘 Πλήρη γεύματα με συνδυασμούς
-- 🍽️ 3 γεύματα + 1-2 σνακ ημερησίως
+- 🍽️ Τεμαχισμένο με πιρούνι, μαλακά κομμάτια
 - 😋 Μεγαλύτερη ποικιλία γεύσεων
 
 </details>
 
 <details>
-<summary><b>👧👦 Στάδιο 4: Συνταγές για Παιδιά (12+ μήνες)</b></summary>
+<summary><b>📅 9+ Μηνών: Πρόγραμμα Διατροφής 3 Ημερών</b></summary>
 
-#### Διασκεδαστικές συνταγές για νήπια
-- **Μίνι Πίτσα με Λαχανικά** - Fun & διατροφικό
-- **Πολύχρωμη Σαλάτα Ζυμαρικών** - Υγιεινή & νόστιμη
-- **Χαμόγελα από Μήλα** - Διασκεδαστικό snack
+#### Τριήμερο πρόγραμμα με finger foods και ισορροπημένη διατροφή
 
-**Χαρακτηριστικά:**
-- 🍕 Εύκολες και διασκεδαστικές
-- 👨‍🍳 Το παιδί μπορεί να βοηθήσει
-- 🎨 Πολύχρωμες παρουσιάσεις
-- 😊 Ενθαρρύνουν την αυτονομία
+**Περιλαμβάνει:**
+- 🍽️ Πρωινό, Μεσημεριανό, Απογευματινό, Βραδινό
+- 👐 Finger foods και μαλακές τροφές
+- 🥗 Ισορροπημένη διατροφή με φρούτα, λαχανικά, πρωτεΐνες
+- 💡 Συμβουλές για finger foods κατά ηλικία
+
+**Παραδείγματα:**
+- Νιφάδες με ακτινίδιο / Μούσλι με μούρα / Βρώμη με φράουλες
+- Κοτόπουλο με κάρι & ρύζι / Ζυμαρικά με μπολονέζ / Φακές με γλυκοπατάτα
+- Μύρτιλλα & μπανάνα / Πολτός μήλου / Γιαούρτι με ροδάκινο
+- Ζυμαρικά με σάλτσα / Πιτάκια ψαριού / Κοτόπουλο με πατάτα & μήλο
+
+</details>
+
+<details>
+<summary><b>👧👦 18+ Μηνών: Εύκολες Συνταγές για Νήπια</b></summary>
+
+#### Διασκεδαστικές συνταγές που τα παιδιά λατρεύουν
+- **Μίνι Πίτσα για Παιδιά** - Fun & διατροφική (με βάσεις πίτσας ή ψωμί)
+- **Αφράτα Μπισκότα** - 12 κομμάτια, εύκολα στην παρασκευή
+- **Χαμόγελα Μήλου** - Με φυστικοβούτυρο και μαршμαλοους
+- **Ψητές Μπανάνες με Σοκολάτα** - Υπέροχο επιδόρπιο
+- **Ντιπ Τυριού Κόταταζ** - Με μπαστουνάκια λαχανικών
+- **Γευστικές Μελιτζάνες** - Με ντομάτες, σταφίδες και κανέλα
+
+**Οδηγίες Μαγειρικής με Παιδιά:**
+- 18-24 μηνών: Πλύσιμο φρούτων, ανάδευση, τοποθέτηση υλικών
+- 2-3 ετών: Χύσιμο υλικών, σχηματισμός μπαλών ζύμης, διακόσμηση
+- 3+ ετών: Κόψιμο με πλαστικό μαχαίρι, μέτρηση υλικών, ανάμιξη
+
+</details>
+
+<details>
+<summary><b>🥕 12+ Μηνών: Υγιεινά Σνακ</b></summary>
+
+#### Γρήγορα, θρεπτικά σνακ για μεταξύ των γευμάτων
+- **Μπαστουνάκια Λαχανικών με Χούμους** - Πλούσιο σε φυτικές ίνες
+- **Φρούτα Εποχής** - Μπανάνα, μήλο, πορτοκάλι, μούρα
+- **Γιαούρτι με Μέλι & Καρύδια** - Για παιδιά 3+ ετών
+- **Κριτσίνια Ολικής με Τυρί** - Καλή πηγή ασβεστίου
+- **Smoothie Φρούτων** - Δροσιστικό και πλούσιο σε θρεπτικά
+- **Αυγό Βραστό** - Εξαιρετική πηγή πρωτεΐνης
+
+**Συμβουλές:**
+- 🕐 Προσφέρετε σνακ 2-3 ώρες πριν τα κύρια γεύματα
+- 🍎 Προτιμήστε φρέσκα φρούτα και λαχανικά
+- 🚫 Αποφύγετε σνακ με υψηλή περιεκτικότητα σε ζάχαρη και αλάτι
+- 📦 Έχετε πάντα προετοιμασμένα σνακ
 
 </details>
 
@@ -148,7 +198,7 @@
 
 ## 🚀 Γρήγορη Έναρξη
 
-### Επιλογή 1: Άμεση Χρήση (Recommended)
+### Επιλογή 1: Άμεση Χρήση (Συνιστώμενη)
 
 <div align="center">
 
@@ -158,7 +208,7 @@
 
 </div>
 
-### Επιλογή 2: Local Development
+### Επιλογή 2: Τοπική Ανάπτυξη
 
 ```bash
 # Clone το repository
@@ -181,7 +231,7 @@ npx http-server -p 8000
 1. **Fork** το repository
 2. **Settings** → **Pages**
 3. **Source**: Branch `main`, Folder `/`
-4. **Save** - Live σε 1-2 λεπτά!
+4. **Save** - Ζωντανό σε 1-2 λεπτά!
 
 ---
 
@@ -192,8 +242,8 @@ npx http-server -p 8000
 | Τεχνολογία | Χρήση |
 |------------|-------|
 | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Semantic structure, SEO meta |
-| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Grid, Flexbox, Gradients, Responsive |
-| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Navigation, Section toggle, Smooth scroll |
+| ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Grid, Flexbox, Gradients, Dark Mode, Responsive |
+| ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Navigation, Theme toggle, LocalStorage, Smooth scroll |
 
 </div>
 
@@ -202,20 +252,23 @@ npx http-server -p 8000
 ```yaml
 Architecture:
   Type: Single-file (all-in-one)
-  Size: ~13KB (uncompressed)
+  Size: ~62KB (uncompressed)
   Dependencies: Zero (pure vanilla)
   
 CSS:
+  - CSS Variables για θέματα
   - CSS Gradients (backgrounds)
   - CSS Grid & Flexbox (layouts)
   - Media Queries (responsive)
   - Box Shadow & Border Radius
   - Sticky positioning (navigation)
+  - Dark/Light mode με smooth transitions
   
 JavaScript:
-  - Section toggle functionality
+  - Theme toggle με LocalStorage
+  - Mobile navigation με burger menu
   - Smooth scrolling
-  - Button active states
+  - Auto-close mobile menu
   - Event listeners
   
 Performance:
@@ -223,6 +276,7 @@ Performance:
   - Fast loading
   - Mobile optimized
   - No external dependencies
+  - LocalStorage για user preferences
 ```
 
 ---
@@ -232,13 +286,22 @@ Performance:
 ```
 syntages-morou/
 │
-├── 📄 index.html          # Κύριο αρχείο (all-in-one ~13KB)
+├── 📄 index.html          # Κύριο αρχείο (all-in-one ~62KB)
 │   ├── <head>             # Meta tags, title
-│   ├── <style>            # Inline CSS με gradients
-│   ├── <body>             # 5 sections (intro + 4 stages)
-│   └── <script>           # Navigation JavaScript
+│   ├── <style>            # Inline CSS με variables και dark mode
+│   ├── <body>             # 8 sections + navigation
+│   │   ├── Navigation     # Sticky navbar με theme toggle
+│   │   ├── Intro          # Οδηγίες & πληροφορίες
+│   │   ├── 6+ μηνών       # Πρώτες γεύσεις
+│   │   ├── 7-9 μηνών      # Χοντροί πολτοί
+│   │   ├── 10-12 μηνών    # Τροφές με κομμάτια
+│   │   ├── 9+ μηνών       # Πρόγραμμα διατροφής
+│   │   ├── 18+ μηνών      # Συνταγές για νήπια
+│   │   ├── 12+ μηνών      # Υγιεινά σνακ
+│   │   └── Safety         # Αποθήκευση & ασφάλεια
+│   └── <script>           # Theme toggle & navigation JavaScript
 │
-├── 📝 README.md           # Documentation
+├── 📝 README.md           # Documentation (αυτό το αρχείο)
 └── 📜 LICENSE             # MIT License
 ```
 
@@ -248,15 +311,27 @@ syntages-morou/
 
 ### 🧭 Πλοήγηση
 
-1. Χρησιμοποιήστε το **navigation bar** στην κορυφή
-2. Επιλέξτε από τα **5 κουμπιά**:
-   - 🏠 **Αρχική** - Οδηγίες & πληροφορίες
-   - **Στάδιο 1** - 4-6 μήνες
-   - **Στάδιο 2** - 6-8 μήνες
-   - **Στάδιο 3** - 9-12 μήνες
-   - **Στάδιο 4** - 12+ μήνες
-3. Κάθε κλικ ανοίγει το αντίστοιχο στάδιο
-4. **Smooth scroll** στην κορυφή αυτόματα
+1. Χρησιμοποιήστε το **navigation bar** στην κορυφή της σελίδας
+2. Επιλέξτε από τα **8 κουμπιά**:
+   - 🏠 **Αρχή** - Εισαγωγή και οδηγίες χρήσης
+   - **6+ μηνών** - Πρώτες γεύσεις (6 συνταγές)
+   - **7-9 μηνών** - Χοντροί πολτοί (6 συνταγές)
+   - **10-12 μηνών** - Τροφές με κομμάτια (4 συνταγές)
+   - **Πρόγραμμα** - Τριήμερο πρόγραμμα διατροφής
+   - **18+ μηνών** - Εύκολες συνταγές για νήπια (6 συνταγές)
+   - **Σνακ** - Υγιεινά σνακ (6 ιδέες)
+   - **Ασφάλεια** - Αποθήκευση & οδηγίες ασφάλειας
+3. Κάθε κλικ μεταφέρει την προβολή στην αντίστοιχη ενότητα
+4. **Smooth scroll** για καλύτερη εμπειρία χρήστη
+5. Στα κινητά, το μενού κλείνει αυτόματα μετά την επιλογή
+
+### 🌓 Θέμα (Dark/Light Mode)
+
+- Κλικ στο εικονίδιο **☀️/🌙** δίπλα στην πλοήγηση
+- Η προτίμηση αποθηκεύεται αυτόματα στο LocalStorage
+- Διατηρείται σε επόμενες επισκέψεις
+- Desktop: Κουμπί στο navigation bar
+- Mobile: Κουμπί δίπλα στο burger menu
 
 ### 🍽️ Χρήση Συνταγών
 
@@ -265,29 +340,28 @@ syntages-morou/
 ```yaml
 Στοιχεία:
   - Τίτλος συνταγής
-  - ⏱️ Χρόνος προετοιμασίας
   - 🍽️ Αριθμός μερίδων
-  - 🏷️ Tags (π.χ. ❄️ Κατάψυξη, 🥩 Πρωτεΐνη)
+  - ⏱️ Χρόνος ατμού (σε λεπτά)
   
 Περιεχόμενο:
-  - Υλικά (με ποσότητες)
-  - Βήμα-βήμα οδηγίες
+  - Υλικά με ακριβείς ποσότητες
+  - Βήμα-βήμα οδηγίες εκτέλεσης
   - 💊 Θρεπτικά οφέλη
-  - 🍴 Tips σερβιρίσματος
+  - 🍴 Tips και παρατηρήσεις
 ```
 
 ---
 
-## 📊 Browser Support
+## 📊 Υποστήριξη Browsers
 
 <div align="center">
 
 | Browser | Version | Status |
 |---------|---------|--------|
-| ![Chrome](https://img.shields.io/badge/-Chrome-4285F4?style=flat-square&logo=google-chrome&logoColor=white) | 90+ | ✅ Tested |
-| ![Firefox](https://img.shields.io/badge/-Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white) | 88+ | ✅ Tested |
-| ![Safari](https://img.shields.io/badge/-Safari-000000?style=flat-square&logo=safari&logoColor=white) | 14+ | ✅ Tested |
-| ![Edge](https://img.shields.io/badge/-Edge-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white) | 90+ | ✅ Compatible |
+| ![Chrome](https://img.shields.io/badge/-Chrome-4285F4?style=flat-square&logo=google-chrome&logoColor=white) | 90+ | ✅ Δοκιμασμένο |
+| ![Firefox](https://img.shields.io/badge/-Firefox-FF7139?style=flat-square&logo=firefox&logoColor=white) | 88+ | ✅ Δοκιμασμένο |
+| ![Safari](https://img.shields.io/badge/-Safari-000000?style=flat-square&logo=safari&logoColor=white) | 14+ | ✅ Δοκιμασμένο |
+| ![Edge](https://img.shields.io/badge/-Edge-0078D7?style=flat-square&logo=microsoft-edge&logoColor=white) | 90+ | ✅ Συμβατό |
 | ![Mobile](https://img.shields.io/badge/-Mobile-success?style=flat-square) | All | ✅ Responsive |
 
 </div>
@@ -316,13 +390,15 @@ git commit -m 'feat: Προσθήκη νέας συνταγής'
 git push origin feature/new-recipe
 ```
 
-### 💡 Ιδέες
+### 💡 Ιδέες για Συνεισφορά
 
-- 🍽️ Νέες συνταγές Philips
-- 🌐 Μεταφράσεις (EN, FR)
-- 🐛 Bug fixes
-- 🎨 UI improvements
+- 🍽️ Νέες συνταγές Philips Avent
+- 🌐 Μεταφράσεις (Αγγλικά, Γαλλικά, Γερμανικά)
+- 🐛 Διόρθωση σφαλμάτων
+- 🎨 Βελτιώσεις UI/UX
 - 📱 PWA features
+- 📊 Nutrition calculator
+- 🔍 Λειτουργία αναζήτησης
 
 ---
 
@@ -337,8 +413,8 @@ git push origin feature/new-recipe
 
 ### Υγεία & Διατροφή
 
-- 🏥 [WHO Infant Feeding](https://www.who.int/nutrition/topics/complementary_feeding/en/)
-- 👶 [AAP Solid Foods](https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Starting-Solid-Foods.aspx)
+- 🏥 [WHO Infant Feeding Guidelines](https://www.who.int/nutrition/topics/complementary_feeding/en/)
+- 👶 [AAP Starting Solid Foods](https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Starting-Solid-Foods.aspx)
 
 ---
 
@@ -348,7 +424,7 @@ git push origin feature/new-recipe
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**MIT License** - Ελεύθερο για προσωπική & εμπορική χρήση
+**MIT License** - Ελεύθερο για προσωπική και εμπορική χρήση
 
 Copyright (c) 2026 Michalis
 
@@ -360,15 +436,39 @@ Copyright (c) 2026 Michalis
 
 > **Σημαντική Σημείωση:**
 > 
-> Οι συνταγές βασίζονται σε επίσημες πηγές της Philips Avent και διεθνείς οδηγίες.
+> Οι συνταγές βασίζονται σε επίσημες πηγές της Philips Avent και σε διεθνείς οδηγίες διατροφής βρεφών.
 > 
-> **Πριν εισάγετε νέες τροφές:**
+> **Πριν εισάγετε νέες τροφές στη διατροφή του μωρού σας:**
 > - ✅ Συμβουλευτείτε πάντα τον **παιδίατρό σας**
-> - ✅ Λάβετε υπόψη **οικογενειακό ιστορικό** αλλεργιών
-> - ✅ Παρακολουθείτε για **αλλεργικές αντιδράσεις**
-> - ✅ Εισάγετε **μία νέα τροφή** τη φορά
+> - ✅ Λάβετε υπόψη το **οικογενειακό ιστορικό** αλλεργιών
+> - ✅ Παρακολουθείτε προσεκτικά για **αλλεργικές αντιδράσεις**
+> - ✅ Εισάγετε **μία νέα τροφή** κάθε φορά
+> - ✅ Περιμένετε **3-5 ημέρες** πριν εισάγετε άλλο νέο τρόφιμο
 > 
-> Κάθε παιδί είναι **μοναδικό** και έχει διαφορετικές ανάγκες.
+> Κάθε παιδί είναι **μοναδικό** και έχει διαφορετικές διατροφικές ανάγκες και ρυθμό ανάπτυξης.
+
+---
+
+## 🛡️ Ασφάλεια & Αποθήκευση
+
+### Αποθήκευση
+- ❄️ Ψυγείο: Έως 24 ώρες σε καθαρά, αεροστεγή δοχεία
+- 🧊 Κατάψυξη: 1-3 μήνες σε κύβους πάγου ή VIA Cups
+- 🔥 Θέρμανση: Μόνο την ποσότητα που θα καταναλώσετε
+- 🚫 Μην ξαναπαγώνετε ή ξαναθερμαίνετε τροφές
+
+### Ασφάλεια Παρασκευής
+- 🧼 Πλύνετε πάντα τα χέρια σας και του μωρού
+- 🌡️ Ελέγχετε τη θερμοκρασία πριν σερβίρετε
+- 🧂 Μην προσθέτετε αλάτι ή ζάχαρη κάτω των 12 μηνών
+- 🍯 Αποφύγετε μέλι κάτω του 1 έτους
+- 🐟 Ελέγχετε προσεκτικά για κόκαλα στο ψάρι
+
+### Κίνδυνος Πνιγμονής
+- 🚫 Αποφύγετε σκληρά, στρογγυλά ή κολλώδη τρόφιμα
+- ✂️ Κόψτε τροφές σε μικρά, εύκολα κομμάτια
+- 🪑 Βεβαιωθείτε ότι το παιδί κάθεται όρθιο
+- 👀 Μην αφήνετε ποτέ το μωρό αφύλακτο κατά τη διάρκεια του γεύματος
 
 ---
 
@@ -376,10 +476,10 @@ Copyright (c) 2026 Michalis
 
 <div align="center">
 
-🏢 **Philips Avent** - Επίσημες συνταγές & οδηγίες  
-👨‍👩‍👧 **Κοινότητα Γονέων** - Feedback & testing  
-💻 **Open Source Community** - Έμπνευση & εργαλεία  
-⭐ **GitHub Community** - Υποστήριξη & stars!
+🏢 **Philips Avent** - Επίσημες συνταγές και οδηγίες διατροφής  
+👨‍👩‍👧 **Κοινότητα Γονέων** - Feedback και δοκιμές  
+💻 **Open Source Community** - Έμπνευση και εργαλεία  
+⭐ **GitHub Community** - Υποστήριξη και αστέρια!
 
 </div>
 
@@ -387,15 +487,26 @@ Copyright (c) 2026 Michalis
 
 ## 🗺️ Roadmap
 
-### 🚀 v2.0 (Coming Soon)
+### 🚀 v2.1 (Τρέχον)
 
-- [ ] 🌐 Multilingual (EN, FR, DE)
+- [x] ✅ Dark/Light mode toggle
+- [x] ✅ LocalStorage για θέμα
+- [x] ✅ Ενότητα 18+ μηνών με 6 συνταγές
+- [x] ✅ Ενότητα υγιεινών σνακ
+- [x] ✅ Επέκταση προγράμματος διατροφής
+- [x] ✅ Οδηγίες μαγειρικής με παιδιά
+- [x] ✅ Responsive burger menu
+
+### 🎯 v3.0 (Επόμενα)
+
+- [ ] 🌐 Multilingual (English, Français, Deutsch)
 - [ ] 📱 Progressive Web App (PWA)
 - [ ] 🔍 Recipe search functionality
-- [ ] 💾 Save favorites
-- [ ] 🖨️ Print-friendly mode
+- [ ] 💾 Save favorite recipes
+- [ ] 🖨️ Print-friendly recipe cards
 - [ ] 📊 Nutrition calculator
 - [ ] 🗓️ Weekly meal planner
+- [ ] 📧 Email/share recipes
 
 ---
 
@@ -403,7 +514,7 @@ Copyright (c) 2026 Michalis
 
 ## 💚 Φτιαγμένο με αγάπη για τα μωρά μας
 
-### Χρήσιμο; Αφήστε ένα ⭐ star!
+### Χρήσιμο; Αφήστε ένα ⭐ αστέρι!
 
 ---
 
@@ -415,6 +526,6 @@ Copyright (c) 2026 Michalis
 
 [![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-brightgreen?style=flat-square&logo=github)](https://pages.github.com/)
 
-**Last Updated**: February 14, 2026
+**Last Updated**: February 15, 2026
 
 </div>
