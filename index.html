@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <title>Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-        content="Συνταγές βρεφικής τροφής για τον Philips Avent Premium 4-in-1 Steamer Blender (SCF883/01): οδηγίες, χρόνοι ατμού, υφές ανά ηλικία, συμβουλές ασφάλειας.">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Πλήρης οδηγός συνταγών βρεφικής τροφής για Philips Avent 4-in-1 Steamer Blender. Πολτοί, γεύματα με κρέας, ψάρι, σνακ και οδηγίες υφής ανά ηλικία (6-18+ μηνών). Συμβουλές ασφάλειας, αποθήκευσης και αλλεργιών.">
+  <meta name="keywords" content="βρεφική τροφή, συνταγές μωρού, Philips Avent, απογαλάκτιση, πολτοί, steamer blender, baby food recipes, υγιεινή διατροφή βρέφους">
+  <meta name="author" content="Michelis2023">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michelis2023.github.io/syntages-morou/">
+  <meta property="og:title" content="Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1">
+  <meta property="og:description" content="Πλήρης οδηγός συνταγών για υγιεινή βρεφική διατροφή. Πολτοί, γεύματα και σνακ για κάθε ηλικία με χρόνους ατμού και συμβουλές ασφάλειας.">
+  <meta property="og:image" content="https://michelis2023.github.io/syntages-morou/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://michelis2023.github.io/syntages-morou/">
+  <meta property="twitter:title" content="Συνταγές Βρεφικής Τροφής – Philips Avent 4‑in‑1">
+  <meta property="twitter:description" content="Πλήρης οδηγός συνταγών για υγιεινή βρεφική διατροφή. Πολτοί, γεύματα και σνακ για κάθε ηλικία.">
+  <meta property="twitter:image" content="https://michelis2023.github.io/syntages-morou/og-image.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
     :root {
       --bg: #fafafa;
@@ -25,8 +49,8 @@
       --link: #2b7a78;
       --link-hover: #205a59;
       --max-width: 1040px;
-      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-body: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-heading: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color-scheme: light dark;
     }
 
@@ -313,6 +337,58 @@
       white-space: nowrap;
     }
 
+    /* SEARCH BAR */
+    
+    .search-container {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem 1.15rem;
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(15,23,42,0.02);
+    }
+    
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+    
+    .search-input {
+      width: 100%;
+      padding: 0.65rem 2.5rem 0.65rem 1rem;
+      border: 2px solid var(--border);
+      border-radius: 999px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color 0.2s ease;
+    }
+    
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    
+    .search-input::placeholder {
+      color: var(--muted);
+    }
+    
+    .search-icon {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      pointer-events: none;
+    }
+    
+    .search-results {
+      margin-top: 0.5rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
     /* PAGE CONTENT */
 
     header.main-header {
@@ -333,14 +409,16 @@
 
     .page-title {
       font-family: var(--font-heading);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      font-weight: 700;
       margin: 0 0 0.5rem;
       color: var(--primary);
+      line-height: 1.3;
     }
 
     @media (min-width: 768px) {
       .page-title {
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
     }
 
@@ -367,13 +445,18 @@
     }
 
     h2 {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
+      font-weight: 700;
       margin: 0 0 0.75rem;
       color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     h3 {
-      font-size: 1.02rem;
+      font-size: 1.05rem;
+      font-weight: 600;
       margin: 1rem 0 0.5rem;
       color: var(--text);
     }
@@ -457,13 +540,17 @@
       padding: 0.9rem 0.9rem 0.95rem;
       background: linear-gradient(145deg, #ffffff05, #00000008);
     }
+    
+    .recipe-card.hidden {
+      display: none;
+    }
 
     body.dark .recipe-card {
       background: radial-gradient(circle at top left, #1f2937 0, #020617 48%, #020617 100%);
     }
 
     .recipe-title {
-      font-size: 0.98rem;
+      font-size: 1rem;
       font-weight: 600;
       margin: 0 0 0.25rem;
     }
@@ -575,6 +662,56 @@
       font-weight: 600;
       color: var(--primary);
     }
+    
+    /* PRINT STYLES */
+    
+    @media print {
+      body {
+        background: white;
+        color: black;
+        font-size: 11pt;
+      }
+      
+      .navbar,
+      .search-container,
+      .theme-toggle,
+      .controls-row,
+      .nav-toggle {
+        display: none !important;
+      }
+      
+      .page {
+        padding: 0;
+        max-width: 100%;
+      }
+      
+      .intro-card, .section-card, .table-card, .tips-card, .recipe-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+      }
+      
+      h1, h2, h3 {
+        page-break-after: avoid;
+        color: #000;
+      }
+      
+      .recipe-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      
+      .age-chip {
+        border: 1px solid #000;
+        background: #f0f0f0;
+        color: #000;
+      }
+    }
   </style>
 </head>
 <body>
@@ -640,9 +777,24 @@
         Ιδέες για πολτούς, γεύματα με κρέας ή ψάρι, σνακ και οδηγίες υφής–χρόνου για κάθε ηλικία, με προσαρμογή σε όλες τις συσκευές.
       </p>
     </header>
+    
+    <!-- SEARCH BAR -->
+    <div class="search-container">
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Αναζήτηση συνταγών (π.χ. μήλο, κοτόπουλο, πολτός)..." 
+          aria-label="Αναζήτηση συνταγών"
+        >
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
 
     <section class="intro-card">
-      <h2>Εισαγωγή</h2>
+      <h2>📖 Εισαγωγή</h2>
       <p>
         Το Philips Avent Premium 4‑in‑1 Steamer Blender (SCF883/01) συνδυάζει ατμομαγείρεμα, μπλένταρισμα, απόψυξη και θέρμανση σε μία κανάτα 1&nbsp;λίτρου, με τεχνολογία ατμού που βοηθά στη διατήρηση θρεπτικών συστατικών και υφής.
       </p>
@@ -664,7 +816,7 @@
     </section>
 
     <section class="table-card">
-      <h2>Χρόνοι ατμού &amp; υφή ανά ηλικία</h2>
+      <h2>⏱️ Χρόνοι ατμού &amp; υφή ανά ηλικία</h2>
 
       <div class="table-wrapper">
         <table>
@@ -676,18 +828,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Μήλο, αχλάδι</td><td>10–15</td></tr>
-            <tr><td>Μπανάνα, βερίκοκο</td><td>8–10</td></tr>
-            <tr><td>Πατάτα, καρότο</td><td>20–25</td></tr>
-            <tr><td>Γλυκοπατάτα, κολοκύθα</td><td>20–25</td></tr>
-            <tr><td>Μπρόκολο, κολοκυθάκι</td><td>15–20</td></tr>
-            <tr><td>Αρακάς, φασολάκια</td><td>15–20</td></tr>
-            <tr><td>Κοτόπουλο</td><td>20–25</td></tr>
-            <tr><td>Μοσχάρι</td><td>25–30</td></tr>
-            <tr><td>Ψάρι (λευκό)</td><td>15–20</td></tr>
-            <tr><td>Σολομός</td><td>20–25</td></tr>
-            <tr><td>Ρύζι με λαχανικά</td><td>20–25</td></tr>
-            <tr><td>Φακές</td><td>25–30</td></tr>
+            <tr><td>🍎 Μήλο, αχλάδι</td><td>10–15</td></tr>
+            <tr><td>🍌 Μπανάνα, βερίκοκο</td><td>8–10</td></tr>
+            <tr><td>🥔 Πατάτα, καρότο</td><td>20–25</td></tr>
+            <tr><td>🍠 Γλυκοπατάτα, κολοκύθα</td><td>20–25</td></tr>
+            <tr><td>🥦 Μπρόκολο, κολοκυθάκι</td><td>15–20</td></tr>
+            <tr><td>🫛 Αρακάς, φασολάκια</td><td>15–20</td></tr>
+            <tr><td>🍗 Κοτόπουλο</td><td>20–25</td></tr>
+            <tr><td>🥩 Μοσχάρι</td><td>25–30</td></tr>
+            <tr><td>🐟 Ψάρι (λευκό)</td><td>15–20</td></tr>
+            <tr><td>🐟 Σολομός</td><td>20–25</td></tr>
+            <tr><td>🍚 Ρύζι με λαχανικά</td><td>20–25</td></tr>
+            <tr><td>🫘 Φακές</td><td>25–30</td></tr>
           </tbody>
         </table>
       </div>
@@ -715,13 +867,13 @@
     <!-- 6+ months -->
     <section class="section-card" id="age-6m">
       <div class="age-chip"><span>6+ μηνών</span></div>
-      <h2>Συνταγές για βρέφη 6+ μηνών</h2>
+      <h2>🍎 Συνταγές για βρέφη 6+ μηνών</h2>
       <p>
         Στην αρχή προτιμάμε απλούς συνδυασμούς φρούτων ή λαχανικών, με λείο πολτό και σταδιακή αύξηση της πυκνότητας, καθώς το μωρό εξοικειώνεται.
       </p>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός μήλου αχλαδιού φρούτα βιταμίνη">
           <h3 class="recipe-title">Πολτός μήλου &amp; αχλαδιού</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -744,7 +896,7 @@
           <p class="nutrition-note">Πλούσιο σε βιταμίνη C και φυτικές ίνες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός γλυκοπατάτας λαχανικά βιταμίνη">
           <h3 class="recipe-title">Πολτός γλυκοπατάτας</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -765,7 +917,7 @@
           <p class="nutrition-note">Πλούσιο σε βιταμίνη A και φυτικές ίνες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός καρότου λαχανικά βιταμίνη αντιοξειδωτικά">
           <h3 class="recipe-title">Πολτός καρότου</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -786,7 +938,7 @@
           <p class="nutrition-note">Πλούσιο σε βιταμίνη A και αντιοξειδωτικά.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός μπρόκολου λαχανικά φυλλικό οξύ βιταμίνη">
           <h3 class="recipe-title">Πολτός μπρόκολου</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -807,7 +959,7 @@
           <p class="nutrition-note">Πλούσιο σε φυλλικό οξύ και βιταμίνη C.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός κολοκύθας butternut λαχανικά βιταμίνη">
           <h3 class="recipe-title">Πολτός κολοκύθας butternut</h3>
           <div class="meta-row">
             <span class="meta-pill">4 μερίδες</span>
@@ -828,7 +980,7 @@
           <p class="nutrition-note">Πλούσιο σε βιταμίνη A και φυτικές ίνες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πολτός μπανάνας αβοκάντο φρούτα βιταμίνη κάλιο">
           <h3 class="recipe-title">Πολτός μπανάνας &amp; αβοκάντο</h3>
           <div class="meta-row">
             <span class="meta-pill">1 μερίδα</span>
@@ -854,13 +1006,13 @@
     <!-- 7-9 months -->
     <section class="section-card" id="age-7-9m">
       <div class="age-chip"><span>7–9 μηνών</span></div>
-      <h2>Συνταγές για βρέφη 7–9 μηνών</h2>
+      <h2>🥗 Συνταγές για βρέφη 7–9 μηνών</h2>
       <p>
         Σε αυτή την ηλικία, το μωρό μπορεί να δοκιμάσει πιο πολύπλοκους συνδυασμούς λαχανικών, κρέατος, ψαριού και οσπρίων, με ελαφρά πιο χοντρή υφή.
       </p>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="κοτόπουλο γλυκοπατάτα καρότο κρέας πρωτεΐνη βιταμίνη">
           <h3 class="recipe-title">Κοτόπουλο με γλυκοπατάτα &amp; καρότο</h3>
           <div class="meta-row">
             <span class="meta-pill">3 μερίδες</span>
@@ -883,7 +1035,7 @@
           <p class="nutrition-note">Πλούσιο σε πρωτεΐνη, βιταμίνη A και B6.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="μοσχάρι πατάτα μπιζέλι κρέας σίδηρος πρωτεΐνη">
           <h3 class="recipe-title">Μοσχάρι με πατάτα &amp; μπιζέλι</h3>
           <div class="meta-row">
             <span class="meta-pill">3 μερίδες</span>
@@ -906,7 +1058,7 @@
           <p class="nutrition-note">Πλούσιο σε σίδηρο, ψευδάργυρο και φυτικές ίνες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="λευκό ψάρι λαχανικά ιώδιο ωμέγα μπακαλιάρος">
           <h3 class="recipe-title">Λευκό ψάρι με λαχανικά</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -929,7 +1081,7 @@
           <p class="nutrition-note">Πλούσιο σε ιώδιο, σελήνιο και Ωμέγα-3.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="φακές γλυκοπατάτα όσπρια πρωτεΐνη σίδηρος">
           <h3 class="recipe-title">Φακές με γλυκοπατάτα</h3>
           <div class="meta-row">
             <span class="meta-pill">3 μερίδες</span>
@@ -951,7 +1103,7 @@
           <p class="nutrition-note">Πλούσιο σε φυτική πρωτεΐνη, σίδηρο και φυτικές ίνες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="επιδόρπιο ροδάκινου δαμάσκηνου φρούτα γιαούρτι">
           <h3 class="recipe-title">Επιδόρπιο ροδάκινου &amp; δαμάσκηνου</h3>
           <div class="meta-row">
             <span class="meta-pill">1 μερίδα</span>
@@ -970,10 +1122,10 @@
             <li>Μπλεντάρετε 2–3 × 10 δευτ.</li>
             <li>Αφήστε να κρυώσει και αναμείξτε με το γιαούρτι.</li>
           </ol>
-          <p class="nutrition-note">Προσθέστε βρώμη για επιπλέον υφή ή φράουλες.</p>
+          <p class="nutrition-note">Προσθέστε βρώμη για πιο πηχτή υφή ή φράουλες για γεύση.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="κοτόπουλο πατάτα μήλο κρέας φρούτα βιταμίνη">
           <h3 class="recipe-title">Κοτόπουλο με πατάτα &amp; μήλο</h3>
           <div class="meta-row">
             <span class="meta-pill">4 μερίδες</span>
@@ -1001,13 +1153,13 @@
     <!-- 10-12 months -->
     <section class="section-card" id="age-10-12m">
       <div class="age-chip"><span>10–12 μηνών</span></div>
-      <h2>Συνταγές για βρέφη 10–12 μηνών</h2>
+      <h2>🍽️ Συνταγές για βρέφη 10–12 μηνών</h2>
       <p>
         Το μωρό τώρα μπορεί να χειριστεί πιο τραχιές υφές και μεγαλύτερα κομμάτια τροφής. Μπορείτε να μειώσετε τον χρόνο μπλενταρίσματος ή να αφήσετε την τροφή κομματιασμένη με πιρούνι.
       </p>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="ριζότο κοτόπουλο λαχανικά ρύζι πρωτεΐνη">
           <h3 class="recipe-title">Ριζότο με κοτόπουλο &amp; λαχανικά</h3>
           <div class="meta-row">
             <span class="meta-pill">3 μερίδες</span>
@@ -1031,7 +1183,7 @@
           <p class="nutrition-note">Πλούσιο σε πρωτεΐνη και βιταμίνες B.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="σολομός πατάτα μπρόκολο ψάρι ωμέγα βιταμίνη">
           <h3 class="recipe-title">Σολομός με πατάτα &amp; μπρόκολο</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -1054,7 +1206,7 @@
           <p class="nutrition-note">Πλούσιο σε Ωμέγα-3, βιταμίνη D και σελήνιο.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="ζυμαρικά σάλτσα μπολονέζ κιμάς πρωτεΐνη σίδηρος">
           <h3 class="recipe-title">Ζυμαρικά με σάλτσα μπολονέζ</h3>
           <div class="meta-row">
             <span class="meta-pill">10 μερίδες</span>
@@ -1081,7 +1233,7 @@
           <p class="nutrition-note">Πλούσιο σε πρωτεΐνη και σίδηρο. Μπορείτε να καταψύξετε τη σάλτσα σε μερίδες.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="πίτα λαχανικών τυρί αυγό ασβέστιο">
           <h3 class="recipe-title">Πίτα λαχανικών με τυρί</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -1110,7 +1262,7 @@
     <!-- Meal Plan -->
     <section class="section-card" id="meal-plan">
       <div class="age-chip"><span>9+ μηνών</span></div>
-      <h2>Πρόγραμμα διατροφής 3 ημερών</h2>
+      <h2>📅 Πρόγραμμα διατροφής 3 ημερών</h2>
       <p>
         Ενδεικτικό τριήμερο πρόγραμμα γευμάτων για βρέφη 9+ μηνών με finger foods και ισορροπημένη διατροφή.
       </p>
@@ -1165,13 +1317,13 @@
     <!-- Kids Recipes 18+ months -->
     <section class="section-card" id="kids-recipes">
       <div class="age-chip"><span>18+ μηνών</span></div>
-      <h2>Εύκολες συνταγές για νήπια</h2>
+      <h2>👶 Εύκολες συνταγές για νήπια</h2>
       <p>
         Από τους 18 μήνες, τα παιδιά μπορούν να απολαύσουν περισσότερο ποικίλες τροφές και να συμμετέχουν στην προετοιμασία απλών γευμάτων.
       </p>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="μίνι πίτσα παιδιά τυρί μοτσαρέλα λαχανικά">
           <h3 class="recipe-title">Μίνι πίτσα για παιδιά</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -1194,7 +1346,7 @@
           <p class="nutrition-note">Αφήστε το παιδί να διακοσμήσει τη δική του πίτσα!</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="αφράτα μπισκότα βούτυρο ζάχαρη αλεύρι γλυκό">
           <h3 class="recipe-title">Αφράτα μπισκότα</h3>
           <div class="meta-row">
             <span class="meta-pill">12 κομμάτια</span>
@@ -1212,14 +1364,14 @@
           <ol>
             <li>Χτυπήστε βούτυρο και ζάχαρη, μέχρι να αφρατέψουν.</li>
             <li>Προσθέστε το αυγό και ανακατέψτε.</li>
-            <li>Σερνίρετε το αλεύρι και το baking powder.</li>
+            <li>Προσθέστε το αλεύρι και το baking powder.</li>
             <li>Σχηματίστε μπαλάκια και τοποθετήστε σε λαδωμένο ταψί.</li>
             <li>Ψήστε στους 180°C για 10–12 λεπτά.</li>
           </ol>
           <p class="nutrition-note">Τα παιδιά μπορούν να βοηθήσουν στη διαμόρφωση των μπισκότων.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="χαμόγελα μήλου φυστικοβούτυρο σνακ υγιεινό">
           <h3 class="recipe-title">Χαμόγελα μήλου</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -1241,7 +1393,7 @@
           <p class="nutrition-note">Διασκεδαστικό και υγιεινό σνακ που τα παιδιά λατρεύουν!</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="ψητές μπανάνες σοκολάτα επιδόρπιο γλυκό">
           <h3 class="recipe-title">Ψητές μπανάνες με σοκολάτα</h3>
           <div class="meta-row">
             <span class="meta-pill">2 μερίδες</span>
@@ -1264,7 +1416,7 @@
           <p class="nutrition-note">Υπέροχο επιδόρπιο που τα παιδιά θα λατρέψουν!</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="ντιπ τυριού κότατζ γιαούρτι λαχανικά πρωτεΐνη">
           <h3 class="recipe-title">Ντιπ τυριού κότατζ</h3>
           <div class="meta-row">
             <span class="meta-pill">4 μερίδες</span>
@@ -1287,7 +1439,7 @@
           <p class="nutrition-note">Υγιεινό σνακ, πλούσιο σε πρωτεΐνη και ασβέστιο.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="γευστικές μελιτζάνες ντομάτες σταφίδες κανέλα">
           <h3 class="recipe-title">Γευστικές μελιτζάνες</h3>
           <div class="meta-row">
             <span class="meta-pill">4 μερίδες</span>
@@ -1326,43 +1478,43 @@
     <!-- Snacks -->
     <section class="section-card" id="snacks">
       <div class="age-chip"><span>12+ μηνών</span></div>
-      <h2>Υγιεινά σνακ για νήπια</h2>
+      <h2>🍪 Υγιεινά σνακ για νήπια</h2>
       <p>
         Ιδέες για γρήγορα, θρεπτικά σνακ που μπορείτε να προσφέρετε μεταξύ των κύριων γευμάτων.
       </p>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="μπαστουνάκια λαχανικών χούμους υγιεινό σνακ">
           <h3 class="recipe-title">Μπαστουνάκια λαχανικών με χούμους</h3>
           <p>Καρότα, αγγούρι και πιπεριά κομμένα σε μπαστουνάκια με σπιτικό ή έτοιμο χούμους.</p>
           <p class="nutrition-note">Πλούσιο σε φυτικές ίνες και πρωτεΐνη.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="φρούτα εποχής μπανάνα μήλο πορτοκάλι μούρα">
           <h3 class="recipe-title">Φρούτα εποχής</h3>
           <p>Μπανάνα, μήλο, πορτοκάλι, μούρα ή οποιοδήποτε φρούτο της αρεσκείας του παιδιού, κομμένο σε κατάλληλα κομμάτια.</p>
           <p class="nutrition-note">Φυσική πηγή βιταμινών και γλυκιάς γεύσης.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="γιαούρτι μέλι καρύδια ασβέστιο πρωτεΐνη">
           <h3 class="recipe-title">Γιαούρτι με μέλι &amp; καρύδια</h3>
           <p>Φυσικό γιαούρτι με λίγο μέλι και τριμμένα καρύδια (για παιδιά 3+ ετών).</p>
           <p class="nutrition-note">Πλούσιο σε ασβέστιο, πρωτεΐνη και υγιή λίπη.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="κριτσίνια ολικής τυρί δημητριακά ασβέστιο">
           <h3 class="recipe-title">Κριτσίνια ολικής με τυρί</h3>
           <p>Κριτσίνια ολικής άλεσης με φέτες τυριού ή κρέμα τυριού.</p>
           <p class="nutrition-note">Καλή πηγή ασβεστίου και δημητριακών ολικής.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="smoothie φρούτων μπανάνα φράουλες γιαούρτι">
           <h3 class="recipe-title">Smoothie φρούτων</h3>
           <p>Μπανάνα, φράουλες, γιαούρτι και λίγο γάλα, μπλεντάρισμα για λεία υφή.</p>
           <p class="nutrition-note">Δροσιστικό και πλούσιο σε θρεπτικά συστατικά.</p>
         </article>
 
-        <article class="recipe-card">
+        <article class="recipe-card" data-recipe="αυγό βραστό πρωτεΐνη χολίνη">
           <h3 class="recipe-title">Αυγό βραστό</h3>
           <p>Βραστό αυγό κομμένο σε τέταρτα, εύκολο να πιαστεί και πολύ θρεπτικό.</p>
           <p class="nutrition-note">Εξαιρετική πηγή πρωτεΐνης και χολίνης.</p>
@@ -1380,7 +1532,7 @@
 
     <!-- Storage & Safety -->
     <section class="tips-card" id="storage-safety">
-      <h2>Αποθήκευση &amp; Ασφάλεια</h2>
+      <h2>🛡️ Αποθήκευση &amp; Ασφάλεια</h2>
       <h4>Αποθήκευση</h4>
       <ul class="tip-list">
         <li>Φυλάσσετε τους πολτούς στο ψυγείο για μέχρι 24 ώρες σε καθαρά, αεροστεγή δοχεία.</li>
@@ -1461,6 +1613,47 @@
         navToggle.classList.remove('open');
         navMenuMobile.classList.remove('open');
       });
+    });
+    
+    // SEARCH FUNCTIONALITY
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const recipeCards = document.querySelectorAll('.recipe-card');
+    
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase().trim();
+      
+      if (searchTerm === '') {
+        // Show all recipes
+        recipeCards.forEach(card => {
+          card.classList.remove('hidden');
+        });
+        searchResults.textContent = '';
+        return;
+      }
+      
+      let visibleCount = 0;
+      
+      recipeCards.forEach(card => {
+        const searchData = card.getAttribute('data-recipe') || '';
+        const title = card.querySelector('.recipe-title')?.textContent.toLowerCase() || '';
+        const content = card.textContent.toLowerCase();
+        
+        if (searchData.includes(searchTerm) || title.includes(searchTerm) || content.includes(searchTerm)) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      
+      if (visibleCount === 0) {
+        searchResults.textContent = `Δεν βρέθηκαν συνταγές για "${searchTerm}"`;
+      } else if (visibleCount === 1) {
+        searchResults.textContent = `Βρέθηκε 1 συνταγή`;
+      } else {
+        searchResults.textContent = `Βρέθηκαν ${visibleCount} συνταγές`;
+      }
     });
   </script>
 </body>
