@@ -78,6 +78,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-padding-top: 80px;
+    }
+
     body {
       margin: 0;
       font-family: var(--font-body);
@@ -220,6 +224,7 @@
       padding: 2.5rem;
       margin-bottom: 3rem;
       box-shadow: var(--shadow);
+      scroll-margin-top: 80px;
     }
 
     .guide-section h2 {
@@ -263,6 +268,7 @@
       gap: 0.7rem;
       margin-bottom: 2.25rem;
       justify-content: center;
+      scroll-margin-top: 80px;
     }
 
     .filter-btn {
@@ -522,6 +528,10 @@
 
     /* MOBILE ADJUSTMENTS */
     @media (max-width: 600px) {
+      html {
+        scroll-padding-top: 70px;
+      }
+
       .nav-links {
         gap: 0.75rem;
       }
@@ -540,6 +550,11 @@
 
       .guide-section {
         padding: 1.75rem;
+        scroll-margin-top: 70px;
+      }
+
+      .filters {
+        scroll-margin-top: 70px;
       }
 
       .modal-content {
@@ -627,7 +642,7 @@
     </section>
 
     <!-- FILTERS -->
-    <div class="filters">
+    <div id="recipes" class="filters">
       <button class="filter-btn active" onclick="filterRecipes('all')">Όλες</button>
       <button class="filter-btn" onclick="filterRecipes('6-7')">6-7 μηνών</button>
       <button class="filter-btn" onclick="filterRecipes('7-9')">7-9 μηνών</button>
@@ -636,7 +651,7 @@
     </div>
 
     <!-- RECIPES GRID -->
-    <div id="recipes" class="recipes-grid"></div>
+    <div class="recipes-grid"></div>
 
   </div>
 
@@ -1192,7 +1207,7 @@
 
     // RENDER RECIPES
     function renderRecipes(filter = 'all') {
-      const grid = document.getElementById('recipes');
+      const grid = document.querySelector('.recipes-grid');
       const filtered = filter === 'all' 
         ? recipes 
         : recipes.filter(r => r.category === filter);
