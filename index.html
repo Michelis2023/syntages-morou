@@ -37,7 +37,8 @@
       --primary: #2b7a78;
       --primary-light: #def2f1;
       --accent: #ffb347;
-      --text: #222222;
+      --text: #1a1a1a;
+      --text-heading: #0d0d0d;
       --muted: #666666;
       --border: #e0e0e0;
       --radius: 12px;
@@ -61,6 +62,7 @@
       --primary-light: rgba(56,189,248,0.1);
       --accent: #fbbf24;
       --text: #e5e7eb;
+      --text-heading: #f9fafb;
       --muted: #9ca3af;
       --border: #1f2933;
       --shadow: 0 18px 45px rgba(0,0,0,0.7);
@@ -79,7 +81,7 @@
     body {
       margin: 0;
       font-family: var(--font-body);
-      background: radial-gradient(circle at top, #ffffff 0, var(--bg) 48%, var(--bg) 100%);
+      background: var(--bg);
       color: var(--text);
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -128,7 +130,7 @@
     .nav-logo {
       font-weight: 700;
       font-size: 1.05rem;
-      color: var(--text);
+      color: var(--text-heading);
       text-decoration: none;
     }
 
@@ -186,6 +188,10 @@
     .hero {
       text-align: center;
       padding: 2.75rem 0 3rem;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
     }
 
     .hero-title {
@@ -193,16 +199,18 @@
       font-size: clamp(1.85rem, 5vw, 2.5rem);
       font-weight: 700;
       margin: 0 0 0.75rem;
-      color: var(--text);
+      color: var(--text-heading);
       line-height: 1.2;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
 
     .hero-subtitle {
       font-size: 1.05rem;
       color: var(--muted);
-      margin: 0 auto 2rem;
+      margin: 0 auto 0;
       max-width: 620px;
       line-height: 1.6;
+      padding: 0 1rem;
     }
 
     /* FILTERS */
@@ -277,7 +285,7 @@
       font-size: 1.35rem;
       font-weight: 700;
       margin: 0 0 0.65rem;
-      color: var(--text);
+      color: var(--text-heading);
     }
 
     .recipe-desc {
@@ -367,7 +375,7 @@
       font-size: 1.85rem;
       font-weight: 700;
       margin: 0 0 1rem;
-      color: var(--text);
+      color: var(--text-heading);
       padding-right: 2.5rem;
     }
 
@@ -390,7 +398,7 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin: 0 0 0.85rem;
-      color: var(--text);
+      color: var(--text-heading);
     }
 
     .modal-section ul, .modal-section ol {
@@ -477,6 +485,10 @@
       
       .nav-link {
         font-size: 0.85rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
       }
 
       .hero-title {
